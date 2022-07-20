@@ -1,7 +1,7 @@
 <template>
   <div class="main-container flex">
     <div class="dots">
-      <img src="../../assets/group-71.png" alt="dots" />
+      <img src="../../assets/Group-71.png" alt="dots" />
     </div>
     <div>
       <h1>Customer Reviews</h1>
