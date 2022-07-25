@@ -51,8 +51,11 @@ const state = reactive({
 <style scoped>
 header {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
-  position: sticky;
+  position: fixed;
+  background-color: #fff;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
