@@ -57,6 +57,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0px 12px;
+  z-index: 10000;
+  background-color: #fff;
 }
 .logo {
   padding: 1rem 0;

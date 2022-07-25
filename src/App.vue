@@ -17,10 +17,10 @@ import Header from "./components/Header.vue";
   font-family: "Poppins", sans-serif;
   color: #2c3e50;
 }
-.main-container {
+/*.main-container {
   height: 100vh;
   overflow: hidden;
-}
+}*/
 .fullscreen {
   height: 100vh;
   overflow: scroll;
