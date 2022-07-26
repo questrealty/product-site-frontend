@@ -189,8 +189,8 @@ button:hover {
   width: 60%;
 }
 
-.data-collection {
-}
+/* .data-collection {
+} */
 
 @media (min-width: 940px) {
   .group1 {
