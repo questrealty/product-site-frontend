@@ -105,7 +105,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 50%;
 }
 .footer-nav-links {
   display: none;
@@ -133,7 +133,7 @@ a {
 button {
   background-color: #6d553e;
   color: white;
-  padding: 8px 32px;
+  padding: 12px 32px;
   border-radius: 5px;
   font-weight: 700;
   font-size: 16px;
@@ -186,13 +186,17 @@ button:hover {
 }
 
 .subscribe {
-  width: 100%;
+  width: 60%;
 }
 
 .data-collection {
 }
 
 @media (min-width: 940px) {
+  .group1 {
+    width: 70%;
+  }
+
   .footer-nav-links {
     display: flex;
     margin-left: 40px;
