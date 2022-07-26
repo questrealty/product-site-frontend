@@ -13,14 +13,42 @@
       </p>
     </div>
     <div class="team-profiles">
-      <div><img src="../../assets/about-assets/Frame 333.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 334.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 335.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 336.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 333-1.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 334-1.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 335-1.svg" alt="" /></div>
-      <div><img src="../../assets/about-assets/Frame 336-1.svg" alt="" /></div>
+      <div>
+        <img src="../../assets/about-assets/Frame-333.svg" alt="team member" />
+      </div>
+      <div>
+        <img src="../../assets/about-assets/Frame-334.svg" alt="team member" />
+      </div>
+      <div>
+        <img src="../../assets/about-assets/Frame-335.svg" alt="team member" />
+      </div>
+      <div>
+        <img src="../../assets/about-assets/Frame-336.svg" alt="team member" />
+      </div>
+      <div>
+        <img
+          src="../../assets/about-assets/Frame-333-1.svg"
+          alt="team member"
+        />
+      </div>
+      <div>
+        <img
+          src="../../assets/about-assets/Frame-334-1.svg"
+          alt="team member"
+        />
+      </div>
+      <div>
+        <img
+          src="../../assets/about-assets/Frame-335-1.svg"
+          alt="team member"
+        />
+      </div>
+      <div>
+        <img
+          src="../../assets/about-assets/Frame-336-1.svg"
+          alt="team member"
+        />
+      </div>
     </div>
   </div>
 </template>

@@ -17,7 +17,7 @@
     </div>
     <div class="video-content">
       <img
-        src="../../assets/about-assets/Frame 355.svg"
+        src="../../assets/about-assets/Frame-355.svg"
         alt=""
         class="img-fluid"
       />
