@@ -13,7 +13,7 @@
 .container {
   margin-top: 90px;
   position: relative;
-  height: 350px;
+  height: 500px;
 }
 
 .img-fluid {
