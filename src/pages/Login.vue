@@ -1,16 +1,12 @@
 <template>
-<div>
+  <div>
     <h1>Log in page</h1>
     <p>Coming soon ...</p>
-</div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

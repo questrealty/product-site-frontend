@@ -1,15 +1,17 @@
 <template>
-  <div class="main-container">
+  <div class="overall-container">
     <Header />
 
-    <div class="fullscreen">
-      <router-view />
-    </div>
+    <!-- <div class="fullscreen"> -->
+    <router-view />
+    <!-- </div> -->
+    <SiteFooter />
   </div>
 </template>
 
 <script setup>
 import Header from "./components/Header.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 </script>
 
 <style>
@@ -17,12 +19,7 @@ import Header from "./components/Header.vue";
   font-family: "Poppins", sans-serif;
   color: #2c3e50;
 }
-.main-container {
-  height: 100vh;
-  overflow: hidden;
-}
-.fullscreen {
-  height: 100vh;
-  overflow: scroll;
+.overall-container {
+  position: relative;
 }
 </style>
