@@ -72,7 +72,7 @@ p {
     display: flex;
     gap: 197px;
     text-align: left;
-    margin-top: 200px;
+    padding-top: 200px;
   }
   .container > div {
     width: 50%;
