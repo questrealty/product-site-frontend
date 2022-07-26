@@ -192,6 +192,10 @@ button:hover {
 /* .data-collection {
 } */
 
+.social-media > img {
+  margin-right: 8px;
+}
+
 @media (min-width: 940px) {
   .group1 {
     width: 70%;
