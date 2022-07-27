@@ -25,6 +25,7 @@ export default {}
         padding: 3px 12px;
         background-color: #6D553E;
         color: white;
-        margin-right: 10px;
+        margin: 20px 10px 0 0;
+        border-radius: 2px;
     }
 </style>

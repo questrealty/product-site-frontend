@@ -15,7 +15,7 @@
             <p>{{ property.price }}</p>
           </div>
         </div>
-        <p class="contact">Agents <br /> Contact <br /> Number
+        <p class="contact">Agents Contact Number
         </p>
         <div></div>
       </li>
@@ -82,13 +82,12 @@ export default {
 
 <style scoped>
 
-.propertylist-container {
-  width: 100%;
-}
+
 .item {
   background-color: var(--barley-120);
   padding: 30px;
   margin: 0 0 30px;
+  border-radius: 4px;
   color: var(--barley-40);
   display: flex;
   flex: 1;
@@ -110,6 +109,9 @@ text-align: center;
 
 
 @media (min-width: 320px) {
+    .propertylist-container {
+            width: 100%;
+        }
     .description-wrapper {
         flex-direction: column;
         align-items: center;
@@ -125,23 +127,31 @@ text-align: center;
         font-size: .7rem;
     }
     .contact {
-        align-self: flex-end;
+        width: 100%;
+        text-align: right;
         margin: 0;
         font-size: .5rem;
     }
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 600px) {
+    .item {
+        font-size: 1rem;
+    }
     .image {
         width: 300px;
         height: 300px
     }
-} */
+}
 
-@media (min-width: 1024px){
+@media (min-width: 786px) {
     .propertylist-container{
         width: 70%;
     }
+}
+
+@media (min-width: 1024px){
+    
 
     .item {
         font-size: 1rem;
@@ -152,13 +162,17 @@ text-align: center;
     .item-heading {
         margin: 15px 0px;
     }
-    
+    .image {
+        width: 300px;
+        height: 300px
+    }
     .info {
         margin: 0 40px;
         align-self: center;
     }
     
     .contact{
+        width: 10%;
         font-size: .8rem;
         margin: -80px 50px 20px 0;
     }  

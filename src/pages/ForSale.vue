@@ -25,6 +25,6 @@ import QuickSales from "../components/forSale/QuickSales.vue";
   .content{
     display: flex;
     justify-content: space-between;
-    margin: 20px 70px;
+    margin: 20px;
   }
 </style>
