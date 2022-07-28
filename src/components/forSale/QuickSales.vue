@@ -59,7 +59,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin-top: 50px;
   color: var(--white);
 }
 .quick-sales {

@@ -43,6 +43,7 @@ export default {};
   display: flex;
   justify-content: space-around;
   background-color: #6d553e;
+  margin-top:95px;
 }
 .search-filter {
   display: flex;
