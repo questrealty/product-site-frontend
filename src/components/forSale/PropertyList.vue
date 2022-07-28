@@ -15,8 +15,7 @@
             <p>{{ property.price }}</p>
           </div>
         </div>
-        <p class="contact">Agents Contact Number
-        </p>
+        <p class="contact">Agents Contact Number</p>
         <div></div>
       </li>
     </ul>
@@ -81,8 +80,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .item {
   background-color: var(--barley-120);
   padding: 30px;
@@ -99,7 +96,7 @@ export default {
 }
 .description {
   color: var(--barley-40);
-text-align: center;
+  text-align: center;
   margin: 10px auto;
 }
 .image {
@@ -107,80 +104,74 @@ text-align: center;
   height: 250px;
 }
 
-
-@media (min-width: 320px) {
-    .propertylist-container {
-            width: 100%;
-        }
-    .description-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item-heading {
-        margin: 10px auto;
-    }
-    .info {
-        margin: 20px 0;
-        align-self: center;
-    } 
-    .item {
-        font-size: .7rem;
-    }
-    .contact {
-        width: 100%;
-        text-align: right;
-        margin: 0;
-        font-size: .5rem;
-    }
+@media (min-width: 280px) {
+  .propertylist-container {
+    width: 100%;
+  }
+  .description-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-heading {
+    margin: 10px auto;
+  }
+  .info {
+    margin: 20px 0;
+    align-self: center;
+  }
+  .item {
+    font-size: 0.7rem;
+  }
+  .contact {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    font-size: 0.5rem;
+  }
 }
 
 @media (min-width: 600px) {
-    .item {
-        font-size: 1rem;
-    }
-    .image {
-        width: 300px;
-        height: 300px
-    }
+  .item {
+    font-size: 1rem;
+  }
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  .contact {
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 786px) {
-    .propertylist-container{
-        width: 70%;
-    }
+  .propertylist-container {
+    width: 70%;
+  }
 }
 
-@media (min-width: 1024px){
-    
-
-    .item {
-        font-size: 1rem;
-    }
-    .description-wrapper {
-        flex-direction: row;
-    }
-    .item-heading {
-        margin: 15px 0px;
-    }
-    .image {
-        width: 300px;
-        height: 300px
-    }
-    .info {
-        margin: 0 40px;
-        align-self: center;
-    }
-    
-    .contact{
-        width: 10%;
-        font-size: .8rem;
-        margin: -80px 50px 20px 0;
-    }  
+@media (min-width: 1024px) {
+  .item {
+    font-size: 1rem;
+  }
+  .description-wrapper {
+    flex-direction: row;
+  }
+  .item-heading {
+    margin: 15px 0px;
+  }
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  .info {
+    margin: 0 40px;
+    align-self: center;
+  }
+  .contact {
+    align-self: flex-end;
+    width: 10%;
+    font-size: 0.8rem;
+    margin: -80px 50px 20px 0;
+  }
 }
-
-/*  */
-
-
-
-
 </style>

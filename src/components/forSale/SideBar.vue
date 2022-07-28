@@ -20,7 +20,11 @@
       </h2>
     </div>
     <div class="sales-ad">
-      <h2 class="text">Property <br/> Sales<br/> Advert</h2>
+      <h2 class="text">
+        Property <br />
+        Sales<br />
+        Advert
+      </h2>
       <div :style="image2" class="image-2"></div>
     </div>
     <div :style="image3" class="image-3">
@@ -45,9 +49,6 @@ export default {
 </script>
 
 <style scoped>
-
-
-
 .sidebar-container {
   width: 25%;
   display: none;
@@ -105,8 +106,8 @@ export default {
 }
 
 @media (min-width: 786px) {
-    .sidebar-container {
-        display: flex;
-    }
+  .sidebar-container {
+    display: flex;
+  }
 }
 </style>
