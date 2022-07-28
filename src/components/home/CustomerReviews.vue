@@ -1,7 +1,7 @@
 <template>
-  <div class="main-container flex">
+  <div class="review-container flex">
     <div class="dots">
-      <img src="../../assets/group-71.png" alt="dots" />
+      <img src="../../assets/Group-71.png" alt="dots" />
     </div>
     <div>
       <h1>Customer Reviews</h1>
@@ -57,7 +57,7 @@ export default {};
 </script>
 
 <style scoped>
-.main-container {
+.review-container {
   padding: 120px 0;
   flex-direction: column;
   height: fit-content;
