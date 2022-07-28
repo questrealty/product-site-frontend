@@ -64,7 +64,7 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 0.6rem;
-  color: white;
+  color: var(--white);
   margin-bottom: 20px;
 }
 .text {
