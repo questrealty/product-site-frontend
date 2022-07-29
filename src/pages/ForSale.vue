@@ -9,6 +9,7 @@
   </div>
 </template>
 
+
 <script setup>
 import FilterBar from "../components/forSale/FilterBar.vue";
 import PropertyList from "../components/forSale/PropertyList.vue";
