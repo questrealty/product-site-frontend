@@ -3,7 +3,7 @@
     <div class="inner-container">
       <h1 class="topic">Our Featured Properties</h1>
       <p class="sub-topic">
-        This shows the list of our featured properties, they inlclude<br> houses for
+        This shows the list of our featured properties, they inlclude<br class="break"> houses for
         sale and apartments for rent.
       </p>
       <div class="properties-container">
@@ -169,6 +169,11 @@ img {
 .details > p,
 .pricing > p {
   font-size: 12px;
+}
+@media (min-width:320px) {
+  .break{
+    display: none;
+  }
 }
 @media (min-width: 700px) {
   .properties-container {

@@ -3,23 +3,23 @@
     <div class="inner-container">
       <div class="text">
         <div class="inner-text-container">
-          <h1>Why People Choose <br>Quest Realty</h1>
+          <h1>Why People Choose <br class="break">Quest Realty</h1>
           <h3>Finding Your Dream Home</h3>
           <p>
-            There is no better feeling than walking through the<br> door to your new
-            house and knowing you are fully<br> home. At Quest realty we make this
-            dream a happy<br> reality.
+            There is no better feeling than walking through the<br class="break"> door to your new
+            house and knowing you are fully<br class="break"> home. At Quest realty we make this
+            dream a happy<br class="break"> reality.
           </p>
 
           <h3>Best Home Guarantee</h3>
           <p>
-            Coming home is one of the most beautiful things only<br> the best houses
-            with fully working amenities are listed<br> on our platform.
+            Coming home is one of the most beautiful things only<br class="break"> the best houses
+            with fully working amenities are listed<br class="break"> on our platform.
           </p>
 
           <h3>100% Secure Transaction</h3>
           <p>
-            A thing of beauty is a joy forever - stress-free, secure,<br> seamless and fast payment service. 
+            A thing of beauty is a joy forever - stress-free, secure,<br class="break"> seamless and fast payment service. 
           </p>
         </div>
       </div>
@@ -79,7 +79,15 @@ p{
 img {
   max-width: 100%;
 }
-
+@media (min-width: 320px) {
+  .break{
+  display: none;
+}
+.Frame-290{
+  width: 480px;
+  height: 320px;
+}
+}
 @media (min-width: 700px) {
   .container {
     padding: 84px 32px;

@@ -7,17 +7,17 @@
         <div class="service-items flex">
           <img src="../../assets/Frame-299.png" alt="" />
           <h3>Locate your dream house</h3>
-          <p>We are on a quest to help you locate<br> your dream house.</p>
+          <p>We are on a quest to help you locate<br class="break"> your dream house.</p>
         </div>
         <div class="service-items flex">
           <img src="../../assets/Frame-300.png" alt="" />
           <h3>Connect with an Agent</h3>
-          <p>We are on a quest to help you connect<br> with an agent</p>
+          <p>We are on a quest to help you connect<br  class="break"> with an agent</p>
         </div>
         <div class="service-items flex">
           <img src="../../assets/Frame-301.png" alt="" />
           <h3>We offer the best houses yet</h3>
-          <p>We are on a quest to get you the<br> best houses available</p>
+          <p>We are on a quest to get you the<br  class="break"> best houses available</p>
         </div>
       </div>
       <button class="view" type="button">View More Services</button>
@@ -83,7 +83,14 @@ button {
   font-weight: 500;
   cursor: pointer;
 }
-
+@media (min-width:320) {
+  .break{
+    display: none;
+  }
+  h3{
+    text-align: center;
+  }
+}
 @media (min-width: 800px) {
   .services {
     width: 90%;

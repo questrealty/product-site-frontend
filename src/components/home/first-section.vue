@@ -7,11 +7,11 @@
         </div>
         <div class="text">
           <div class="inner-text-container">
-            <h1 class="Find">Find Your Next <br>Perfect Place To <br>Live.</h1>
+            <h1 class="Find">Find Your Next <br class="break">Perfect Place To <br class="break">Live.</h1>
             <p class="paragraph-lp">
-              There is no better feeling than walking through<br> the door to your
-              new house and knowing you <br>are fully home. At Quest Realty we make
-              this<br> dream a happy reality.
+              There is no better feeling than walking through<br  class="break"> the door to your
+              new house and knowing you <br  class="break">are fully home. At Quest Realty we make
+              this<br class="break"> dream a happy reality.
             </p>
             <button class="Learn-More">Learn More</button>
           </div>
@@ -159,11 +159,28 @@ h3 {
   display: flex;
   align-items: center;
 }
-
+@media (min-width: 320px){
+   .Frame29{
+  width: 450px;
+  height: 284px;
+  margin-top: 40px;
+} 
+.break{
+  display: none;
+}
+}
 @media (min-width: 520px) {
   .banner-item {
     flex: 1 1 33%;
   }
+  .break{
+  display: none;
+}
+  .Frame29{
+  width: 450px;
+  height: 284px;
+  margin-top: 40px;
+}
 }
 @media (min-width: 700px) {
   .container {

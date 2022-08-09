@@ -140,7 +140,16 @@ button {
 button:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-
+@media (min-width:320px) {
+  .review-container, .flex{
+    float: none;
+  }
+  .one, .two{
+    display: block;
+    text-align: center;
+    align-content: center;
+  }
+}
 @media (min-width: 786px) {
   .dots > img {
     width: 91px;
