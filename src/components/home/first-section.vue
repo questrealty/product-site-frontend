@@ -3,17 +3,17 @@
     <div class="container">
       <div class="inner-container">
         <div class="image">
-          <img src="../../assets/Frame-290.png" alt="perfect-house" />
+          <img class="Frame29" src="../../assets/Frame 29.png" alt="perfect-house" />
         </div>
         <div class="text">
           <div class="inner-text-container">
-            <h1>Find Your Next Perfect Place To Live</h1>
-            <p>
-              There is no better feeling than walking through the door to your
-              new house and knowing you are fully home. At Quest Realty we make
-              this dream a happy reality.
+            <h1 class="Find">Find Your Next <br>Perfect Place To <br>Live.</h1>
+            <p class="paragraph-lp">
+              There is no better feeling than walking through<br> the door to your
+              new house and knowing you <br>are fully home. At Quest Realty we make
+              this<br> dream a happy reality.
             </p>
-            <button class="btn">Learn More</button>
+            <button class="Learn-More">Learn More</button>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
         <div class="banner-item location">
           <div class="title">
             <img src="../../assets/location.png" alt="Location icon" />
-            <h3>Location</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Location</h3>
           </div>
           <div class="details">
             <p>Choose State</p>
@@ -34,7 +34,7 @@
         <div class="banner-item property-type">
           <div class="title">
             <img src="../../assets/property.png" alt="Location icon" />
-            <h3>Property type</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Property type</h3>
           </div>
           <div class="details">
             <p>Choose Type</p>
@@ -44,7 +44,7 @@
         <div class="banner-item price-range">
           <div class="title">
             <img src="../../assets/moneys.png" alt="Location icon" />
-            <h3>Price range</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;Price range</h3>
           </div>
           <div class="details">
             <p>Choose price</p>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="banner-item search">
-          <button type="search">Search</button>
+          <button class="search" type="search">Search</button>
         </div>
       </div>
     </div>
@@ -69,9 +69,23 @@
   width: 100%;
   margin: 80px 0 120px;
 }
-
+.Find{
+  margin-top: 38px;
+}
 img {
   max-width: 100%;
+}
+.Learn-More{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.search{
+  font-weight: bold;
+}
+.Frame29{
+  width: 750px;
+  height: 484px;
 }
 .text {
   display: flex;
@@ -82,8 +96,16 @@ img {
 }
 
 h1 {
-  margin-bottom: 24px;
   font-weight: bold;
+  color:#6D553E;
+  line-height: 48px;
+}
+.paragraph-lp{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A1B1D;
+  margin-top: 30px;
 }
 
 button {
@@ -95,10 +117,14 @@ button {
   border: none;
   margin-top: 20px;
 }
+button:hover{
+  cursor: pointer;
+}
 
 .banner-container {
   display: flex;
   justify-content: center;
+  color: #352A1F;
 }
 
 .banner {
@@ -109,7 +135,6 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   padding: 4px 12px;
-  margin: 120px 0;
 }
 
 .banner-item {
@@ -163,7 +188,7 @@ h3 {
     flex: 1 1 20%;
   }
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 </style>

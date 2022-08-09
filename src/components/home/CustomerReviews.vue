@@ -16,12 +16,14 @@
                 sit amet, consectetur adipiscing elit. Orci erat vestibulum ac
                 non.
               </p>
-              <div class="flex customer-info">
-                <img src="../../assets/image-1.png" alt="customer 1" />
+              <div class="customer">
                 <div>
                   <h3>Hope Franklin</h3>
                   <p>Customer</p>
                 </div>
+              <div class="flex customer-info">
+                <img src="../../assets/image-1.png" alt="customer 1" />
+              </div>
               </div>
             </div>
           </div>
@@ -34,12 +36,14 @@
                 sit amet, consectetur adipiscing elit. Orci erat vestibulum ac
                 non.
               </p>
-              <div class="flex customer-info">
-                <img src="../../assets/image-2.png" alt="customer 2" />
+              <div class="customer">
                 <div>
                   <h3>Hope Franklin</h3>
                   <p>Customer</p>
                 </div>
+              <div class="flex customer-info">
+                <img src="../../assets/image-2.png" alt="customer 2" />
+              </div>
               </div>
             </div>
           </div>
@@ -62,7 +66,13 @@ export default {};
   flex-direction: column;
   height: fit-content;
 }
-
+.flex{
+  float: right;
+  margin-right: 50px;
+}
+.customer{
+  display: inline-flex;
+}
 .dots {
   display: flex;
   justify-content: flex-end;

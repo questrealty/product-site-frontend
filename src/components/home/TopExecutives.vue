@@ -38,7 +38,7 @@ export default {};
   flex-direction: column;
   width: 100%;
   background-color: var(--barley-120);
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 h1 {
@@ -49,7 +49,12 @@ h1 {
   width: 70%;
   flex-wrap: wrap;
 }
-
+h4{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #6D553E;
+}
 img {
   width: 200px;
   height: 200px;
