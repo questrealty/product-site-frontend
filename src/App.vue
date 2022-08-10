@@ -3,7 +3,6 @@
     <Header />
     <!-- <div class="fullscreen"> -->
     <router-view />
-    <PropertyInfo />
     <!-- </div> -->
     <SiteFooter />
   </div>
