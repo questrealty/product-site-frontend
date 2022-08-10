@@ -5,6 +5,7 @@ import ForRent from "../pages/ForRent.vue";
 import ForSale from "../pages/ForSale.vue";
 import Login from "../pages/Login.vue";
 import Register from "../pages/Register.vue";
+import CustomerDashboard from "../pages/CustomerDashboard.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register,
+  },
+  {
+    path: "/customer-dashboard",
+    name: "CustomerDashboard",
+    component: CustomerDashboard,
   },
 ];
 const router = createRouter({
