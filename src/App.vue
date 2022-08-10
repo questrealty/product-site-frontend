@@ -11,7 +11,6 @@
 <script setup>
 import Header from "./components/Header.vue";
 import SiteFooter from "./components/SiteFooter.vue";
-import PropertyInfo from "./components/dashboard-components/PropertyInfo.vue";
 </script>
 
 <style>
