@@ -91,6 +91,10 @@ input {
     width: 20px;
     height: 20px;
     margin: 2px;
+    transition: transform 0.5s linear
+}
+.profileIcon:hover{
+    transform: scale(1.2);
 }
 .user-info {
     display: flex;
@@ -114,6 +118,7 @@ input {
 .profileImage {
     height: auto;
     width: 20%;
+    margin-right: 10px;
 }
 
 select {
@@ -122,12 +127,18 @@ select {
     background-color: var(--barley-10);
     font-size: 0.7rem;
     color: var(--barley-40);
+    transition: transform 0.5s linear;
+
 }
 
 option {
     font-size: 0.7rem;
     color: black;
     padding: 5px;
+
+}
+select:hover{
+    transform: scale(1.1);
 }
 
 @media (min-width: 768px){
