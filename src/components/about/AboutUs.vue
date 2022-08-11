@@ -29,7 +29,6 @@
 .container {
   background-color: #ede5df;
   padding: 60px 40px 100px;
-  color: #6d553e;
   font-size: 16px;
   text-align: center;
   font-weight: 600;
@@ -47,7 +46,7 @@ h2 {
 
 p {
   padding-top: 20px;
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 24px;
   font-weight: 400;
 }
@@ -64,6 +63,10 @@ p {
   }
   .container {
     padding: 100px 70px;
+  }
+
+  p{
+    font-size: 1rem;
   }
 }
 
@@ -82,7 +85,6 @@ p {
   }
 
   p {
-    font-size: 1rem;
     margin-top: 30px;
   }
 
