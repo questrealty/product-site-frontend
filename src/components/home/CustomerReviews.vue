@@ -16,12 +16,14 @@
                 sit amet, consectetur adipiscing elit. Orci erat vestibulum ac
                 non.
               </p>
-              <div class="flex customer-info">
-                <img src="../../assets/image-1.png" alt="customer 1" />
+              <div class="customer">
                 <div>
                   <h3>Hope Franklin</h3>
                   <p>Customer</p>
                 </div>
+              <div class="flex customer-info">
+                <img src="../../assets/image-1.png" alt="customer 1" />
+              </div>
               </div>
             </div>
           </div>
@@ -34,12 +36,14 @@
                 sit amet, consectetur adipiscing elit. Orci erat vestibulum ac
                 non.
               </p>
-              <div class="flex customer-info">
-                <img src="../../assets/image-2.png" alt="customer 2" />
+              <div class="customer">
                 <div>
                   <h3>Hope Franklin</h3>
                   <p>Customer</p>
                 </div>
+              <div class="flex customer-info">
+                <img src="../../assets/image-2.png" alt="customer 2" />
+              </div>
               </div>
             </div>
           </div>
@@ -62,7 +66,13 @@ export default {};
   flex-direction: column;
   height: fit-content;
 }
-
+.flex{
+  float: right;
+  margin-right: 50px;
+}
+.customer{
+  display: inline-flex;
+}
 .dots {
   display: flex;
   justify-content: flex-end;
@@ -130,7 +140,16 @@ button {
 button:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-
+@media (min-width:320px) {
+  .review-container, .flex{
+    float: none;
+  }
+  .one, .two{
+    display: block;
+    text-align: center;
+    align-content: center;
+  }
+}
 @media (min-width: 786px) {
   .dots > img {
     width: 91px;
