@@ -7,13 +7,13 @@
           <img src="../../assets/Frame-299-1.png" alt="" />
         </div>
         <div class="image two">
-          <img src="../../assets/Frame-300-1.png" alt="" />
+          <img src="../../assets/Frame-301-1.png" alt="" />
         </div>
         <div class="image three">
           <img src="../../assets/Frame-302.png" alt="" />
         </div>
         <div class="image five">
-          <img src="../../assets/Frame-301-1.png" alt="" />
+          <img src="../../assets/Frame-300-1.png" alt="" />
         </div>
       </div>
     </div>
@@ -38,7 +38,6 @@ export default {
   font-family: "Poppins", sans-serif;
   background-color: #ede5df;
   padding: 16px 20px 120px;
-  margin-top: 55px;
 }
 
 h3 {

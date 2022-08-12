@@ -17,7 +17,7 @@ const state = reactive({
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/for-sale">For Sale</router-link>
-        <router-link to="for-rent">For Rent</router-link>
+        <router-link to="for-rent">For rent</router-link>
         <router-link to="/login">Login</router-link>
         <router-link to="/register">Register</router-link>
       </div>
@@ -33,7 +33,7 @@ const state = reactive({
           >For Sale</router-link
         >
         <router-link to="for-rent" class="large-screen-nav"
-          >For Rent</router-link
+          >For rent</router-link
         >
       </div>
       <div class="auth">

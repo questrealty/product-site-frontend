@@ -23,10 +23,10 @@
     <div class="footer-links-container">
       <div class="footer-link">
         <div class="section1">
-          <p class="partnership">Patnerships</p>
+          <p>Patnerships</p>
           <div class="">
             <img src="../assets/theta.png" alt="" />
-            <img src="../assets/iost.png" alt="" /><br>
+            <img src="../assets/iost.png" alt="" />
             <img src="../assets/vibe.png" alt="" />
             <img src="../assets/dropbox.png" alt="" />
           </div>
@@ -66,17 +66,13 @@
         <div class="social-media">
           <img src="../assets/twitter-icon.png" alt="twitter" title="Twitter" />
           <img
-            class="media"
             src="../assets/instagram-icon.png"
             alt="instagram"
             title="Instagram"
           />
-          <img class="media" src="../assets/linkedin-icon.png" alt="linkedin" title="" />
-          <img class="media" src="../assets/facebook-icon.png" alt="facebook" title="" />
+          <img src="../assets/linkedin-icon.png" alt="linkedin" title="" />
+          <img src="../assets/facebook-icon.png" alt="facebook" title="" />
         </div>
-      </div>
-      <div class="reserved">
-        <p>All rights reserved @Quest Realty 2022</p>
       </div>
     </div>
   </div>
@@ -117,9 +113,7 @@ footer {
   width: 70%;
   margin-left: 24px;
 }
-.partnership{
-  margin-bottom: 20px;
-}
+
 .footer-nav-links > a {
   margin-right: 44px;
   flex: 1 1 30%;
@@ -147,18 +141,13 @@ button {
   border: none;
   cursor: pointer;
 }
-.media{
-  padding-left: 20px;
-}
-.social-media{
-  margin-top: 20px;
-}
+
 button:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-links-container {
-  padding: 54px 0px 54px 100px;
+  padding: 54px 0px 54px 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,9 +184,7 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-.reserved{
-  margin-top: 20px;
-}
+
 .subscribe {
   width: 60%;
 }
