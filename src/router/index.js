@@ -1,9 +1,12 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter,createWebHistory } from "vue-router";
+
 import Home from "../pages/Home.vue";
 import About from "../pages/About.vue";
 import ForRent from "../pages/ForRent.vue";
+import ForSale from "../pages/ForSale.vue";
 import Login from "../pages/Login.vue";
 import Register from "../pages/Register.vue";
+import CustomerDashboard from "../pages/CustomerDashboard.vue";
 
 const routes = [
   {
@@ -21,7 +24,11 @@ const routes = [
     name: "ForRent",
     component: ForRent,
   },
-
+  {
+    path: "/for-sale",
+    name: "ForSale",
+    component: ForSale,
+  },
   {
     path: "/login",
     name: "Login",
@@ -31,6 +38,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: Register,
+  },
+  {
+    path: "/customer-dashboard",
+    name: "CustomerDashboard",
+    component: CustomerDashboard,
   },
 ];
 const router = createRouter({
