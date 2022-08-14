@@ -3,7 +3,7 @@
     <div class="inner-container">
       <h1 class="topic">Our Featured Properties</h1>
       <p class="sub-topic">
-        This shows the list of our featured properties, they inlclude<br class="break"> houses for
+        This shows the list of our featured properties, they inlclude houses for
         sale and apartments for rent.
       </p>
       <div class="properties-container">
@@ -25,9 +25,6 @@
               <p>{{ property.size }}</p>
             </div>
           </div>
-        </div>
-        <div class="button">
-          <button class="loadMore">Load More</button>
         </div>
       </div>
     </div>
@@ -109,21 +106,7 @@ export default {
   width: 100%;
   padding: 120px 0;
 }
-.loadMore{
-    padding: 10px 20px;
-  color: white;
-  background-color: var(--barley-40);
-  border-radius: 4px;
-  outline: none;
-  border: none;
-  margin-top: 30px;
-  
-  width: 100%;
-  margin-top: 60px;
-}
-.button{
-  align-content: center;
-}
+
 .inner-container {
   width: 90%;
 }
@@ -131,12 +114,6 @@ export default {
 .topic,
 .sub-topic {
   text-align: center;
-}
-.topic{
-  color: #6D553E;
-}
-.sub-topic{
-  color: #1A1B1D;
 }
 .properties {
   width: 100%;
@@ -169,11 +146,6 @@ img {
 .details > p,
 .pricing > p {
   font-size: 12px;
-}
-@media (min-width:320px) {
-  .break{
-    display: none;
-  }
 }
 @media (min-width: 700px) {
   .properties-container {
