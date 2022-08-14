@@ -1,35 +1,44 @@
 <template>
-  <div class="wrapper">
-    <div class="search-filter">
-      <button class="filter">
+  <div
+    class="wrapper">
+    <div
+      class="search-filter">
+      <button
+        class="filter">
         <p>Type</p>
         <img
           src="../../assets/forSale/D-Arrow-Icon.png"
           alt=""
-          class="arrow-icon"
-        />
+          class="arrow-icon" />
       </button>
-      <button class="filter">
+      <button
+        class="filter">
         <p>Bed</p>
         <img
           src="../../assets/forSale/D-Arrow-Icon.png"
           alt=""
-          class="arrow-icon"
-        />
+          class="arrow-icon" />
       </button>
-      <button class="filter price">
-        <p>Price List</p>
+      <button
+        class="filter price">
+        <p>Price
+          List</p>
         <img
           src="../../assets/forSale/D-Arrow-Icon.png"
           alt=""
-          class="arrow-icon"
-        />
+          class="arrow-icon" />
       </button>
-      <button class="filter">Search</button>
+      <button
+        class="filter">Search</button>
     </div>
-    <div class="dashboard-refresh">
-      <button class="filter">Dashboard</button>
-      <button class="filter">Refresh</button>
+    <div
+      class="dashboard-refresh">
+      <router-link class="link" to="/customer-dashboard">
+        <button
+          class="filter">Dashboard</button>
+      </router-link>
+      <button
+        class="filter">Refresh</button>
     </div>
   </div>
 </template>
@@ -39,6 +48,7 @@ export default {};
 </script>
 
 <style scoped>
+
 .wrapper {
   display: flex;
   justify-content: space-around;
@@ -47,6 +57,9 @@ export default {};
 }
 .search-filter {
   display: flex;
+}
+.link {
+  text-decoration: none;
 }
 .filter {
   display: flex;
