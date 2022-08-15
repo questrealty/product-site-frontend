@@ -2,7 +2,11 @@
   <div id="dashboard-header">
     <div class="welcome-greet">
         <h2>Dashboard</h2>
-        <p>Welcome to Quest Realty Agent Page</p>
+        <!-- Added conditional to this -->
+        <p v-if="type=='agent'">Welcome to Quest Realty Agent Page</p>
+        <!-- Added this line for customer page -->
+        <p v-if="type=='customer'">Welcome to Quest Realty User Page</p>
+
     </div>
     <div class="dashboard-notification">
         <div class="inbox-field">
@@ -19,7 +23,11 @@
 
 <script>
 export default {
-
+    props: {
+        type: {
+            type: String,
+        }
+    }
 }
 </script>
 

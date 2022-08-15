@@ -7,16 +7,21 @@
       <div class="side-menu"><DashboardSidebar /></div>
     </aside>
     <main>
-        <DashboardHeader profileName="Jane Doe" profileTitle="User" profileImage="/src/assets/customerDashboard/userImage.png" />
-      </main>
-    </div>
+      <DashboardHeader profileName="Jane Doe" profileTitle="User" profileImage="/src/assets/customerDashboard/userImage.png" />
+      <DashboardContent />
+    </main>
+    
+
+  </div>
 </template>
 
-<script>
-import DashboardSidebar from '../components/customerDashboard/DashboardSidebar.vue'
-  import DashboardHeader from '../components/customerDashboard/DashboardHeader.vue'
+<script>5
+  import DashboardSidebar from '../components/customerDashboard/DashboardSidebar.vue';
+  import DashboardHeader from '../components/customerDashboard/DashboardHeader.vue';
+  import DashboardContent from '../components/customerDashboard/DashboardContent.vue';
+
   export default {
-    components: { DashboardSidebar, DashboardHeader }
+    components: { DashboardSidebar, DashboardHeader, DashboardContent }
   }
 </script>
 
@@ -46,7 +51,6 @@ import DashboardSidebar from '../components/customerDashboard/DashboardSidebar.v
     width: 56px;
     height: 36px;
   }
-
 main{
   width: 80%;
 }
@@ -60,9 +64,6 @@ main{
   .section{
     height: 15vh;
     border-bottom: 1px solid #211913;
-  }
-  .main{
-    width: 70%;
   }
 }
 @media (min-width: 768px){

@@ -5,7 +5,7 @@
             <span>{{propertyCount}}</span>
         </div>
         <div>
-            <h4>Properties for {{propertyType}}</h4>
+            <h4 >Properties for sale</h4>
             <div v-if="type=='agent'">
               <p v-if="propertyCount == 0">You don't have any properties for {{propertyType}}</p>
               <p v-else>This is the list of properties for {{propertyType}}</p>
@@ -13,21 +13,24 @@
             <p v-if="type=='customer'">This is the list of properties available for {{propertyType}}</p>
             
         </div>
-        <button>Post a property</button>
+        <!-- Added conditional -->
+        <button v-if="type == 'agent'">Post a property</button>
+        <button v-if="type == 'customer'">View Properties</button>
+
     </div>
     <div class="progress-circle">
-        <CircleProgress
-    :percent="70"
-    :viewport="true"
-    :show-percent="true"
-    empty-color="#F6F6F6"
-      :border-width="8"
-      :border-bg-width="30"
-      fill-color="#6D553E"
-      background="#EDE5DF"
-    class="circle"
-    :class="[propertyType == 'rent'? 'rent': '']" 
-  />
+      <CircleProgress
+        :percent="70"
+        :viewport="true"
+        :show-percent="true"
+        empty-color="#F6F6F6"
+        :border-width="8"
+        :border-bg-width="30"
+        fill-color="#6D553E"
+        background="#EDE5DF"
+        class="circle"
+        :class="[propertyType == 'rent'? 'rent': '']" 
+      />
     </div>
   </div>
 </template>
@@ -122,7 +125,7 @@ button{
 
 .circle::after{
   position:absolute;
-  content: "sold";
+  content: "Sold";
   top:55%;
   left:50%;
   transform:translateX(-50%);
@@ -130,14 +133,15 @@ button{
 }
 .circle.rent::after{
   position:absolute;
-  content: "rented";
+  content: "Rented";
   top:55%;
   left:50%;
   transform:translateX(-50%);
   font-size: 0.8rem;
 }
 
-.circle >>> .current-counter::after{
+/* Refactored this as >>> is deprecated */
+.circle:deep(.current-counter::after){
     position: relative;
     content: "%";
 }
