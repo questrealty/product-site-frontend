@@ -1,5 +1,7 @@
 <template>
+  <Header/>
   <div class="container">
+  
     <FilterBar />
     <SearchHeader />
     <div class="content">
@@ -7,6 +9,7 @@
       <SideBar />
     </div>
   </div>
+  <SiteFooter/>
 </template>
 
 
@@ -15,6 +18,9 @@ import FilterBar from "../components/forSale/FilterBar.vue";
 import PropertyList from "../components/forSale/PropertyList.vue";
 import SideBar from "../components/forSale/SideBar.vue";
 import SearchHeader from "../components/forSale/SearchHeader.vue";
+
+import Header from "../components/Header.vue";
+import SiteFooter from "../components/SiteFooter.vue";
 </script>
 
 <style scoped>

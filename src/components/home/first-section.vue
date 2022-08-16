@@ -3,6 +3,7 @@
     <div class="container">
       <div class="inner-container">
         <div class="image">
+          
           <img src="../../assets/Frame-290.png" alt="perfect-house" />
         </div>
         <div class="text">

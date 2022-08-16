@@ -1,8 +1,6 @@
 <template>
-<div>
-    <h1>For Rent page</h1>
-    <p>Coming soon ...</p>
-</div>
+<Header/>
+<SiteFooter/>
 </template>
 
 <script>

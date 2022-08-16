@@ -1,23 +1,30 @@
-<template>
-    <div id="about">
-        <AboutHeader />
-        <AboutUs />
-        <TeamComponent />
-        <Agents />
-        <OtherInfo />
-    </div>
-</template>
-
 <script>
+import Header from '../components/Header.vue';
 import AboutHeader from '../components/about/AboutHeader.vue';
 import AboutUs from '../components/about/AboutUs.vue';
 import TeamComponent from '../components/about/TeamComponent.vue';
 import Agents from '../components/home/Agents.vue';
 import OtherInfo from '../components/about/OtherInfo.vue';
+import SiteFooter from '../components/SiteFooter.vue';
 export default {
-    components: { AboutHeader, AboutUs, TeamComponent, Agents, OtherInfo }
+    components: { AboutHeader, AboutUs, TeamComponent, Agents, OtherInfo, SiteFooter, Header }
 }
 </script>
+<template>
+<Header/>
+    <div id="about">
+        
+        <AboutHeader />
+        <AboutUs />
+        <TeamComponent />
+        <Agents />
+        <OtherInfo />
+        
+    </div>
+    <SiteFooter/>
+</template>
+
+
 
 <style>
 #about{
