@@ -1,0 +1,145 @@
+.sec-btn {
+  @apply bg-[#828692];
+}
+
+.sec-btn-hover {
+  @apply hover:bg-[#979AA4];
+}
+
+.sec-btn-pressed {
+  @apply focus:bg-[#ACAEB6];
+}
+
+.sec-btn-disabled {
+  @apply disabled:bg-[#C0C2C8];
+}
+
+.pry-btn {
+  @apply bg-[#A37F5D] rounded-[5px];
+}
+
+.pry-btn-hover {
+  @apply bg-[#B29478];
+}
+
+.pry-btn-pressed {
+  @apply bg-[#C2AA93];
+}
+
+.pry-btn-disabled {
+  @apply bg-[#D1BFAE];
+}
+
+.h1-reg,
+.h1-med,
+.h1-semi,
+.h1-bold {
+  @apply leading-[60px] text-[40px];
+}
+
+.h2-reg,
+.h2-med,
+.h2-semi,
+.h2-bold {
+  @apply leading-[48px] text-[32px];
+}
+
+.h3-reg,
+.h3-med,
+.h3-semi,
+.h3-bold {
+  @apply leading-[36px] text-[24px];
+}
+
+.h4-reg,
+.h4-med,
+.h4-semi,
+.h4-bold {
+  @apply leading-[30px] text-[20px];
+}
+
+.h5-reg,
+.h5-med,
+.h5-semi,
+.h5-bold {
+  @apply leading-[24px] text-[16px];
+}
+
+.h6-reg,
+.h6-med,
+.h6-semi,
+.h6-bold {
+  @apply leading-[18px] text-[12px];
+}
+
+.h1-reg,
+.h2-reg,
+.h3-reg,
+.h4-reg,
+.h5-reg,
+.h6-reg {
+  @apply font-[400];
+}
+
+.h1-med,
+.h2-med,
+.h3-med,
+.h4-med,
+.h5-med,
+.h6-med {
+  @apply font-[500];
+}
+
+.h1-semi,
+.h2-semi,
+.h3-semi,
+.h4-semi,
+.h5-semi,
+.h6-semi {
+  @apply font-[600] placeholder:font-[600];
+}
+
+.h1-bold,
+.h2-bold,
+.h3-bold,
+.h4-bold,
+.h5-bold,
+.h6-bold {
+  @apply font-[700];
+}
+
+.h1-reg,
+.h2-reg,
+.h3-reg,
+.h4-reg,
+.h5-reg,
+.h6-reg,
+.h1-med,
+.h2-med,
+.h3-med,
+.h4-med,
+.h5-med,
+.h6-med,
+.h1-semi,
+.h2-semi,
+.h3-semi,
+.h4-semi,
+.h5-semi,
+.h6-semi,
+.h1-bold,
+.h2-bold,
+.h3-bold,
+.h4-bold,
+.h5-bold,
+.h6-bold {
+  @apply font-[Poppins];
+}
+
+.pry-main {
+  @apply bg-[#6D553E] text-[#F6F6F6];
+}
+
+
+a{
+  width: max-content;
+}
