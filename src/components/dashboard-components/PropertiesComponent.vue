@@ -2,14 +2,18 @@
   <div id="properties-component">
     <div class="main-contents">
         <img src="../../assets/agent-dashboard-assets/building.svg" alt="">
-        <div>
-            <h3>Total Properties</h3>
+        <!-- Added class -->
+        <div class="property-count">
+            <!-- Modified this to have an if statement -->
+            <h3 v-if="type=='agent'">Total Properties</h3>
+            <!-- Addition -->
+            <h3 v-if="type=='customer'">Properties Available</h3>
+
             <div v-if="type=='agent'">
                 <p v-if="numberOfProperties == 0">You don't have any property listed yet</p>
                 <p v-else>This is the list of properties posted by you</p>
             </div>
             <p v-if="type=='customer'">This is the list of properties available for sale</p>
-            
         </div>
         <div class="counter">
             <span>{{numberOfProperties}}</span>
