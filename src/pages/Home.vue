@@ -6,6 +6,9 @@ import Agents from "../components/home/Agents.vue";
 import FeaturedProperties from "../components/home/FeaturedProperties.vue";
 import TopExecutives from "../components/home/TopExecutives.vue";
 import CustomerReviews from "../components/home/CustomerReviews.vue";
+import Header from "../components/Header.vue";
+import SideBar from "../components/forSale/SideBar.vue";
+import SiteFooter from "../components/SiteFooter.vue";
 
 defineProps({
   msg: String,
@@ -14,6 +17,7 @@ defineProps({
 
 <template>
   <div class="home">
+    <Header/>
     <FirstSection />
     <SecondSection />
     <OurServices />
@@ -21,6 +25,7 @@ defineProps({
     <FeaturedProperties />
     <TopExecutives />
     <CustomerReviews />
+    <SiteFooter/>
   </div>
 </template>
 
