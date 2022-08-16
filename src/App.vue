@@ -1,17 +1,15 @@
 <template>
   <div class="overall-container">
-    <Header />
-
+   
     <!-- <div class="fullscreen"> -->
     <router-view />
     <!-- </div> -->
-    <SiteFooter />
+ 
   </div>
 </template>
 
 <script setup>
-import Header from "./components/Header.vue";
-import SiteFooter from "./components/SiteFooter.vue";
+
 </script>
 
 <style>
