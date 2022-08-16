@@ -25,7 +25,12 @@ const routes = [
     path: "/for-sale",
     name: "ForSale",
     component: ForSale,
-  }
+  },
+  {
+    path: "/contact-us",
+    name: "Contact",
+    component: () => import("../pages/Contact.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),

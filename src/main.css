@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* --global styles */
 
 /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci erat vestibulum ac non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci erat vestibulum ac non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci erat vestibulum ac non. */
