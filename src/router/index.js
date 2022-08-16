@@ -42,7 +42,7 @@ const routes = [
     path: "/customer-dashboard",
     name: "CustomerDashboard",
     component: CustomerDashboard,
-  },
+  }
 ];
 const router = createRouter({
   history: createWebHistory(),
