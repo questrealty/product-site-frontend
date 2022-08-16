@@ -3,7 +3,7 @@
     <div class="container">
       <div class="inner-container">
         <div class="image">
-          <img class="Frame29" src="../../assets/Frame 29.png" alt="perfect-house" />
+          <img class="Frame29" src="../../assets/Frame-29.png" alt="perfect-house" />
         </div>
         <div class="text">
           <div class="inner-text-container">
