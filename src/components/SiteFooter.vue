@@ -45,7 +45,7 @@
           <router-link to="/">Disclaimer</router-link>
         </div>
         <div class="section4 flex-col">
-          <router-link to="/">Contact Us</router-link>
+          <router-link :to="{ name: 'Contact' }">Contact Us</router-link>
           <router-link to="/">Privacy Policies</router-link>
           <router-link to="/">Terms of Use</router-link>
           <router-link to="/">Disclaimer</router-link>
