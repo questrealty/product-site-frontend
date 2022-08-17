@@ -4,7 +4,6 @@
     <!-- <div class="fullscreen"> -->
     <router-view />
     <!-- </div> -->
- 
   </div>
 </template>
 

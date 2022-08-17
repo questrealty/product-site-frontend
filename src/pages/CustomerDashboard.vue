@@ -15,7 +15,7 @@
   </div>
 </template>
 
-<script>5
+<script>
   import DashboardSidebar from '../components/customerDashboard/DashboardSidebar.vue';
   import DashboardHeader from '../components/customerDashboard/DashboardHeader.vue';
   import DashboardContent from '../components/customerDashboard/DashboardContent.vue';

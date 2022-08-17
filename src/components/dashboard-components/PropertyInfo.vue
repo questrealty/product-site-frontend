@@ -5,7 +5,7 @@
             <span>{{propertyCount}}</span>
         </div>
         <div>
-            <h4 >Properties for sale</h4>
+            <h4 >Properties for {{ propertyType }}</h4>
             <div v-if="type=='agent'">
               <p v-if="propertyCount == 0">You don't have any properties for {{propertyType}}</p>
               <p v-else>This is the list of properties for {{propertyType}}</p>
@@ -20,7 +20,7 @@
     </div>
     <div class="progress-circle">
       <CircleProgress
-        :percent="70"
+        :percent="propertyCount"
         :viewport="true"
         :show-percent="true"
         empty-color="#F6F6F6"
@@ -49,7 +49,9 @@ export default {
       type:String
     },
     propertyCount:{
-      type:Number
+      type:Number,
+      default: 0,
+
     },
     propertyType:{
       type:String
@@ -121,6 +123,8 @@ button{
 .circle{ 
     color:#6D553E;
     font-weight: 700;
+    width:150px !important;
+    height:150px !important;
 }
 
 .circle::after{

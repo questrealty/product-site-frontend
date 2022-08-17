@@ -62,10 +62,29 @@ export default {
 }
 
 .info{
+    display: none;
     line-height: 24px;
     font-weight: 500;
+    margin-left: 30px;
 }
 .info span{
     font-weight: 700;
+}
+
+@media (min-width:500px) {
+    .info{
+        display: block;
+    }
+}
+
+@media (min-width:786px) {
+    .info{
+        display: none;
+    }
+}
+@media (min-width:1025px) {
+    .info{
+        display: block;
+    }
 }
 </style>

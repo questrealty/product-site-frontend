@@ -49,7 +49,6 @@ h2{
     font-size:32px;
     margin-bottom:0.7rem;
 }
-
 .inbox-field{
     position: relative;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.14);
@@ -97,6 +96,13 @@ h2{
     object-fit: cover;
 }
 
+.cancel-btn{
+    position: absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
 @media (min-width:1024px) {
     #dashboard-header{
         display: flex;
@@ -105,11 +111,12 @@ h2{
     }
     .dashboard-notification{
         display: flex;
-        gap:20px;
+        gap:10px;
     }
 
     .inbox-field{
-        min-width:600px;
+        padding-right:50px;
+        margin:0px
     }
 
     .button-group{
