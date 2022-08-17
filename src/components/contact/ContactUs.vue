@@ -1,10 +1,10 @@
 <template>
-  <div class="m-auto w-[1440px]">
+  <div class="mx-auto max-w-[1440px]">
     <div class="mb-[30px]">
       <p class="text-center text-[#6D553E] h1-semi">Get in touch with us</p>
     </div>
-    <div class="text-[#6D553E] ml-[270px] mr-[66px]">
-      <div class="flex gap-[73px] !items-end">
+    <div class="text-[#6D553E] mx-[20px] md:mx-[16px]">
+      <div class="flex md:gap-[73px] md:justify-center md:flex-row flex-col">
         <!-- form -->
         <div class="max-w-[670px] w-full">
           <div class="mb-[32px]">
@@ -84,16 +84,32 @@
               "
             ></textarea>
           </div>
+          <div class="block md:hidden mt-[32px]">
+            <button
+              @click="submit"
+              class="
+                border-2
+                bg-[#6D553E]
+                h6-bold
+                !rounded-[8px]
+                px-[27.5px]
+                py-[12px]
+                text-white
+              "
+            >
+              SUBMIT
+            </button>
+          </div>
         </div>
         <!-- more information -->
-        <div class="flex !items-start flex-col">
+        <div class="flex !items-start flex-col self-start md:self-end">
           <p class="h5-med !text-[20px] mt-[32px]">Our Address</p>
           <p class="h5-med mt-[8px] max-w-[361px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci erat
             vestibulum ac non. Lorem
           </p>
           <p class="h5-med mt-[32px] !text-[20px]">Connect With Us</p>
-          <div class="flex mt-[24px] gap-[32px]">
+          <div class="flex mt-[24px] md:gap-[32px] gap-[16px] flex-wrap">
             <div
               class="
                 bg-[#A37F5D]
@@ -146,20 +162,23 @@
           </div>
         </div>
       </div>
-      <div class="mb-[91px] mt-[32px]">
-        <button @click="submit"
-          class="
-            border-2
-            bg-[#6D553E]
-            h6-bold
-            !rounded-[8px]
-            px-[27.5px]
-            py-[12px]
-            text-white
-          "
-        >
-          SUBMIT
-        </button>
+      <div class="flex justify-around">
+        <div class="mb-[0] md:block items-baseline hidden mt-[32px]">
+          <button
+            @click="submit"
+            class="
+              border-2
+              bg-[#6D553E]
+              h6-bold
+              !rounded-[8px]
+              px-[27.5px]
+              py-[12px]
+              text-white
+            "
+          >
+            SUBMIT
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -179,7 +198,6 @@ const form = ref({
 });
 
 const submit = () => {
-    
-    alert(JSON.stringify(form.value))
-}
+  alert(JSON.stringify(form.value));
+};
 </script>
