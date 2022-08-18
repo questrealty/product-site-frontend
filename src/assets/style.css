@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .sec-btn {
   @apply bg-[#828692];
 }
@@ -139,7 +143,6 @@
   @apply bg-[#6D553E] text-[#F6F6F6];
 }
 
-
-a{
+a {
   width: max-content;
 }

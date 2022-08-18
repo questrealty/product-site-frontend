@@ -1,7 +1,7 @@
 <template>
   <svg
-    width=""
-    height=""
+    width="1131"
+    height="517"
     viewBox="0 0 1131 517"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -491,4 +491,5 @@
       </linearGradient>
     </defs>
   </svg>
+  
 </template>
