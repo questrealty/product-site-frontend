@@ -173,7 +173,7 @@
               !rounded-[8px]
               px-[27.5px]
               py-[12px]
-              text-white
+              text-white mb-[91px]
             "
           >
             SUBMIT
@@ -184,7 +184,6 @@
   </div>
 </template>
 <script setup>
-import "../../assets/contact/contact.css";
 import Twitter from "./icons/Twitter.vue";
 import Instagram from "./icons/Instagram.vue";
 import Linkedin from "./icons/Linkedin.vue";

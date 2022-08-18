@@ -1,5 +1,4 @@
-import { createRouter,createWebHistory } from "vue-router";
-
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../pages/Home.vue";
 import About from "../pages/About.vue";
 import ForRent from "../pages/ForRent.vue";
@@ -30,6 +29,11 @@ const routes = [
     path: "/contact-us",
     name: "Contact",
     component: () => import("../pages/Contact.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: () => import("../pages/PagesNotFound.vue"),
   },
 ];
 const router = createRouter({
