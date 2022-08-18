@@ -102,7 +102,7 @@
           </div>
         </div>
         <!-- more information -->
-        <div class="flex !items-start flex-col self-start md:self-end">
+        <div class="flex !items-start flex-col self-start md:self-end md:mb-0 mb-[56px]">
           <p class="h5-med !text-[20px] mt-[32px]">Our Address</p>
           <p class="h5-med mt-[8px] max-w-[361px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci erat

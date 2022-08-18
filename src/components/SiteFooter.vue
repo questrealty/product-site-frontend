@@ -2,15 +2,47 @@
   <footer class="">
     <div class="pry-main">
       <div
-        class="pry-main flex justify-between h4-med border-t-2 border-[#6D553E]"
+        class="
+          pry-main
+          xl:flex
+          xl:flex-row
+          grid lg:grid-cols-4 md:grid-cols-2
+          justify-between
+          h4-med
+          border-t-2 border-[#6D553E]
+        "
       >
-        <div class="w-11/12">
-          <div class="bg-white pl-[68px] pt-[1.5px]">
+        <!-- Logo -->
+        <div class="xl:w-9/12 xl:mb-0 mb-[30px]">
+          <div
+            class="
+              bg-white
+              xl:px-[68px]
+              px-[20px]
+              pt-[1.5px]
+              flex
+              justify-between
+              items-center
+            "
+          >
             <Logo />
+            <div class="hidden">
+              <button
+                class="
+                  pry-main pry-btn
+                  h5-bold
+                  py-[10px]
+                  lg:px-[36px]
+                  px-[27px]
+                "
+              >
+                Post your properties
+              </button>
+            </div>
           </div>
-          <div class="ml-[68px] mt-[68px] w-max">
+          <div class="xl:ml-[68px] ml-[20px] xl:mt-[68px] mt-[20px] w-max">
             <p>Partnerships</p>
-            <div class="grid grid-cols-2 mt-[32px] gap-[30px]">
+            <div class="md:grid md:grid-cols-2 mt-[32px] flex flex-wrap md:gap-[30px] gap-[10px]">
               <Theta />
               <Iost />
               <Vibe />
@@ -18,46 +50,72 @@
             </div>
           </div>
         </div>
-        <div class="w-4/5">
-          <div class="bg-white py-[24px]">
+        <!-- Support column -->
+        <div class="xl:w-3/5  xl:mb-0 mb-[30px]">
+          <div class="bg-white py-[24px] xl:pl-0 pl-[20px]">
             <p class="h4-med !text-[24px] text-[#6D553E]">Support</p>
           </div>
 
-          <div class="flex flex-col mt-[46px]">
+          <div class="flex flex-col mt-[46px] xl:pl-0 pl-[20px]">
             <a href="#" class="mb-[12px]">Help Videos</a>
             <a href="#" class="my-[12px]">Features</a>
             <a href="#" class="my-[12px]">Support</a>
           </div>
         </div>
-        <div class="w-4/5">
-          <div class="bg-white py-[24px]">
+        <!-- Services column -->
+        <div class="xl:w-3/5  xl:mb-0 mb-[30px]">
+          <div class="bg-white py-[24px] xl:pl-0 pl-[20px]">
             <p class="h4-med !text-[24px] text-[#6D553E]">Services</p>
           </div>
-          <div class="flex flex-col mt-[46px]">
+          <div class="flex flex-col mt-[46px] xl:pl-0 pl-[20px]">
             <a href="#" class="mb-[12px]">Payment & Tax</a>
             <a href="#" class="py-[12px]">Privacy Policies</a>
             <a href="#" class="py-[12px]">Terms of use</a>
             <a href="#" class="py-[12px]">Disclaimer</a>
           </div>
         </div>
-        <div class="w-4/5">
-          <div class="bg-white py-[24px]">
+        <!-- About Us column -->
+        <div class="xl:w-3/5  xl:mb-0 mb-[30px]">
+          <div class="bg-white py-[24px] xl:pl-0 pl-[20px]">
             <p class="h4-med !text-[24px] text-[#6D553E]">About Us</p>
           </div>
-          <div class="flex flex-col mt-[46px]">
+          <div class="flex flex-col mt-[46px] xl:px-0 px-[20px]">
             <a href="#" class="mb-[12px]">About us</a>
-            <router-link to="/contact-us" class="my-[12px]">Contact</router-link>
+            <router-link to="/contact-us" class="my-[12px]"
+              >Contact</router-link
+            >
             <a href="#" class="my-[12px]">FAQs</a>
           </div>
         </div>
-        <div class="w-full">
-          <div class="bg-white py-[17px] place-items-end grid pr-[68px]">
-            <button class="pry-main pry-btn h5-bold py-[10px] px-[37px]">
-              Post your properties
-            </button>
+        <!-- Post properties -->
+        <div class="w-full md:col-span-2 lg:col-span-4">
+          <div class="">
+            <div
+              class="
+                bg-white
+                py-[17px]
+                lg:place-items-end
+                justify-end
+                grid
+                xl:pr-[68px] xl:px-0
+                px-[20px]
+              "
+            >
+              <button
+                class="
+                  pry-main pry-btn
+                  h5-bold
+                  py-[10px]
+                  lg:px-[20px]
+                  px-[37px]
+                "
+              >
+                Post your properties
+              </button>
+            </div>
           </div>
 
-          <div class="flex pr-[68px] mt-[28px] flex-col">
+          <div class="flex xl:pr-[68px] mt-[28px] flex-col xl:px-0 float-right xl:max-w-none lg:max-w-[400px] px-[20px]">
             <p>Subscribe to our Newsletter</p>
             <div
               class="
@@ -97,7 +155,7 @@
               vestibulum ac non. Lorem
             </p>
             <p class="h5-med !text-[20px]">Connect With Us</p>
-            <div class="flex mt-[24px] gap-[32px]">
+            <div class="flex mt-[24px] xl:gap-[20px] gap-[16px] lg:flex-row flex-wrap">
               <div
                 class="
                   bg-[white]
@@ -108,7 +166,7 @@
                   p-[18px]
                 "
               >
-                <Twitter  stroke="#A37F5D" />
+                <Twitter stroke="#A37F5D" />
               </div>
               <div
                 class="
@@ -132,7 +190,7 @@
                   p-[18px]
                 "
               >
-                <Linkedin stroke="#A37F5D"/>
+                <Linkedin stroke="#A37F5D" />
               </div>
               <div
                 class="
@@ -152,7 +210,15 @@
         </div>
       </div>
       <div class="">
-        <p class="ml-[52px] pb-[40px] mt-[18px] h4-med">
+        <p
+          class="
+            lg:ml-[52px] lg:text-left
+            text-center
+            pb-[40px]
+            mt-[18px]
+            h4-med
+          "
+        >
           All rights reserved @Quest Realty 2022
         </p>
       </div>
