@@ -57,7 +57,6 @@
         </div>
       </div>
     </div>
-    <!-- <div v-for="(_, index) in 40" :key="index">Helo</div> -->
   </div>
 </template>
 
@@ -68,7 +67,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 80px 0 120px;
+  max-width: 1440px;
+  margin: 120px auto 0;
 }
 
 img {
@@ -100,6 +100,9 @@ button {
 .banner-container {
   display: flex;
   justify-content: center;
+    max-width: 1490px;
+  margin: 10px auto 0;
+  align-items: center;
 }
 
 .banner {
@@ -148,6 +151,7 @@ h3 {
   .inner-container {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
   }
 
   .image,

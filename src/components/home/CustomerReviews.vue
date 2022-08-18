@@ -45,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div class="flex">
+      <div class="flex md:justify-end items-end justify-center md:w-[80%] mb-[30px]">
         <button class="btn">See More Reviews</button>
       </div>
     </div>
@@ -58,7 +58,6 @@ export default {};
 
 <style scoped>
 .review-container {
-  padding: 120px 0;
   flex-direction: column;
   height: fit-content;
 }
@@ -84,7 +83,9 @@ h1 {
 }
 
 .review {
-  width: 90%;
+  max-width: 1440px;
+  width: 80%;
+  margin: 10px auto 0;
 }
 
 .float-left,

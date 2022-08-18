@@ -34,7 +34,7 @@ export default {
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
 
 .container {
-  width: 100%;
+  max-width: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #ede5df;
   padding: 16px 20px 120px;
@@ -53,16 +53,18 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 10px auto 0;
 }
-
 .image__container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
+  width: max-content;
+  gap: 10px;
 }
 .image {
-  flex: 1 1 50%;
+  width: max-content;
   text-align: center;
 }
 
@@ -89,6 +91,12 @@ h3 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 900px) {
+    .image__container {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     padding: 74px 40px;
@@ -102,4 +110,5 @@ h3 {
     flex: 1 1 25%;
   }
 }
+
 </style>

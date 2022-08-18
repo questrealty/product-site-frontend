@@ -105,6 +105,8 @@ export default {
 .container {
   width: 100%;
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 10px auto 0;
 }
 
 .inner-container {

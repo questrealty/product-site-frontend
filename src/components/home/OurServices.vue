@@ -36,6 +36,8 @@
 .container {
   flex-direction: column;
   padding: 64px 0 120px;
+  max-width: 1440px;
+  margin: 70px auto 0;
 }
 
 h1 {
