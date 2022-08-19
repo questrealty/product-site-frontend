@@ -17,10 +17,10 @@
                 non.
               </p>
               <div class="flex customer-info">
-                <img src="../../assets/image-1.png" alt="customer 1" />
-                <div>
-                  <h3>Hope Franklin</h3>
+                <h3>Hope Franklin</h3>
                   <p>Customer</p>
+                <div>
+                  <img src="../../assets/image-1.png" alt="customer 1" />
                 </div>
               </div>
             </div>
@@ -35,10 +35,10 @@
                 non.
               </p>
               <div class="flex customer-info">
-                <img src="../../assets/image-2.png" alt="customer 2" />
+                <h3>Samuel Jacob</h3>
+                <p>Agent</p>
                 <div>
-                  <h3>Hope Franklin</h3>
-                  <p>Customer</p>
+                  <img src="../../assets/image-2.png" alt="customer 2" />
                 </div>
               </div>
             </div>
