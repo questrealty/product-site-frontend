@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <ContactUs class="mt-[94px]"/>
+  <ContactUs class="mt-[180px]"/>
   <SiteFooter />
 </template>
 <script setup>

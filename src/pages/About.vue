@@ -26,7 +26,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 #about{
     color:#6d553e;
 }

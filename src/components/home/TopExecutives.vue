@@ -36,7 +36,7 @@ export default {};
 <style scoped>
 .container {
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--barley-120);
   padding: 80px 0;
 }
@@ -46,8 +46,11 @@ h1 {
   color: var(--barley-40);
 }
 .inner-container {
-  width: 70%;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 10px auto 0;
+  gap: 30px;
+  justify-content: space-around;
 }
 h4{
   font-weight: 700;

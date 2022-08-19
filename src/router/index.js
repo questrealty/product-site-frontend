@@ -30,6 +30,11 @@ const routes = [
     name: "Contact",
     component: () => import("../pages/Contact.vue"),
   },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: () => import("../pages/PagesNotFound.vue"),
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),

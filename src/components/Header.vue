@@ -1,13 +1,12 @@
 <script setup>
 import { reactive } from "vue";
-import {ref} from "vue"
+import { ref } from "vue";
 
-const isOpen =ref(false)
-const isShow =ref(false)
+const isOpen = ref(false);
+const isShow = ref(false);
 const state = reactive({
   menuIsVisible: false,
 });
-
 </script>
 <template>
   <header>
@@ -42,125 +41,132 @@ const state = reactive({
         >
       </div>
       <div class="auth">
-   <button @click="isShow=true" class="large-screen-nav login">Login</button>
-        <button @click="isOpen=true" class="large-screen-nav register">Register</button>
-    
-<teleport to="#modals">
-        <div class="modal" v-if="isShow">
-        <div class="modal-container">
-          <div>
-        <div class="modal-header">
-          <h3>Create Account</h3>
-        <button @click="isShow=false" class="times"> x</button>
-        </div>
-        <form action="">
-        <div class="form-wrap">
-          <div class="input-group">
-            <div class="input-wrap-one">
-          <label for="fname">First Name </label>
-          <input type="text" />
-          </div>
-       <div class="input-wrap-one">
-           <label for="lname">Last Name </label>
-          <input type="text"/>
-          </div> 
-      </div>
-       
-         <div class="input-wrap">
-           <label for="email">Enter email address </label>
-          <input type="email" />
-          </div>
-            <div class="input-wrap">
-           <label>Enter password </label>
-          <input type="password"/>
-          </div>
-          <div class="input-wrap">
-           <label>Confirm password </label>
-          <input type="password"/>
-          </div>
-          <div class="input-group-one">
-            <div class="input-wrap-two">
-          <label for="country">Country code </label>
-          <input type="number" class="country" />
-          </div>
-       <div class="input-wrap-two">
-           <label for="phone">  Format(Digit only) </label>
-          <input type="number" class="phone"/>
-          </div> 
-      </div>
-      <div class="input-group-button">
-           
-          <button type="submit" class="customer"> AGENT</button>
-           <button type="submit" class="agent"> CUSTOMER</button>
-          </div> 
-<button class="register-btn" type="submit">Register</button>
-<p class="terms">By registering, I accept all terms and conditions.</p>
-      </div>
-        </form>
-      </div>
-        </div>
-        </div>
-        </teleport>
-    
+        <button
+          @click="isShow = !isShow && isOpen == false"
+          class="large-screen-nav login"
+        >
+          Login
+        </button>
+        <button
+          @click="isOpen = !isOpen && isShow == false"
+          class="large-screen-nav register"
+        >
+          Register
+        </button>
 
+        <teleport :disabled="true" to="#modals">
+          <div class="modal" v-if="isShow">
+            <div class="modal-container">
+              <div>
+                <div class="modal-header">
+                  <h3>Create Account</h3>
+                  <button @click="isShow = false" class="times">x</button>
+                </div>
+                <form action="">
+                  <div class="form-wrap">
+                    <div class="input-group">
+                      <div class="input-wrap-one">
+                        <label for="fname">First Name </label>
+                        <input type="text" />
+                      </div>
+                      <div class="input-wrap-one">
+                        <label for="lname">Last Name </label>
+                        <input type="text" />
+                      </div>
+                    </div>
 
-        <teleport to="#modals">
-        <div class="modal" v-if="isOpen">
-        <div class="modal-container">
-          <div>
-        <div class="modal-header">
-          <h3>Create Account</h3>
-        <button @click="isOpen=false" class="times"> x</button>
-        </div>
-        <form action="">
-        <div class="form-wrap">
-          <div class="input-group">
-            <div class="input-wrap-one">
-          <label for="fname">First Name </label>
-          <input type="text" />
+                    <div class="input-wrap">
+                      <label for="email">Enter email address </label>
+                      <input type="email" />
+                    </div>
+                    <div class="input-wrap">
+                      <label>Enter password </label>
+                      <input type="password" />
+                    </div>
+                    <div class="input-wrap">
+                      <label>Confirm password </label>
+                      <input type="password" />
+                    </div>
+                    <div class="input-group-one">
+                      <div class="input-wrap-two">
+                        <label for="country">Country code </label>
+                        <input type="number" class="country" />
+                      </div>
+                      <div class="input-wrap-two">
+                        <label for="phone"> Format(Digit only) </label>
+                        <input type="number" class="phone" />
+                      </div>
+                    </div>
+                    <div class="input-group-button">
+                      <button type="submit" class="customer">AGENT</button>
+                      <button type="submit" class="agent">CUSTOMER</button>
+                    </div>
+                    <button class="register-btn" type="submit">Register</button>
+                    <p class="terms">
+                      By registering, I accept all terms and conditions.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-       <div class="input-wrap-one">
-           <label for="lname">Last Name </label>
-          <input type="text"/>
-          </div> 
-      </div>
-       
-         <div class="input-wrap">
-           <label for="email">Enter email address </label>
-          <input type="email" />
+          <div class="modal" v-else-if="isOpen">
+            <div class="modal-container">
+              <div>
+                <div class="modal-header">
+                  <h3>Create Accounts</h3>
+                  <button @click="isOpen = false" class="times">x</button>
+                </div>
+                <form action="">
+                  <div class="form-wrap">
+                    <div class="input-group">
+                      <div class="input-wrap-one">
+                        <label for="fname">First Name </label>
+                        <input type="text" />
+                      </div>
+                      <div class="input-wrap-one">
+                        <label for="lname">Last Name </label>
+                        <input type="text" />
+                      </div>
+                    </div>
+
+                    <div class="input-wrap">
+                      <label for="email">Enter email address </label>
+                      <input type="email" />
+                    </div>
+                    <div class="input-wrap">
+                      <label>Enter password </label>
+                      <input type="password" />
+                    </div>
+                    <div class="input-wrap">
+                      <label>Confirm password </label>
+                      <input type="password" />
+                    </div>
+                    <div class="input-group-one">
+                      <div class="input-wrap-two">
+                        <label for="country">Country code </label>
+                        <input type="number" class="country" />
+                      </div>
+                      <div class="input-wrap-two">
+                        <label for="phone"> Format(Digit only) </label>
+                        <input type="number" class="phone" />
+                      </div>
+                    </div>
+                    <div class="input-group-button">
+                      <button type="submit" class="customer">AGENT</button>
+                      <button type="submit" class="agent">CUSTOMER</button>
+                    </div>
+                    <button class="register-btn" type="submit">Register</button>
+                    <p class="terms">
+                      By registering, I accept all terms and conditions.
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-            <div class="input-wrap">
-           <label>Enter password </label>
-          <input type="password"/>
-          </div>
-          <div class="input-wrap">
-           <label>Confirm password </label>
-          <input type="password"/>
-          </div>
-          <div class="input-group-one">
-            <div class="input-wrap-two">
-          <label for="country">Country code </label>
-          <input type="number" class="country" />
-          </div>
-       <div class="input-wrap-two">
-           <label for="phone">  Format(Digit only) </label>
-          <input type="number" class="phone"/>
-          </div> 
-      </div>
-      <div class="input-group-button">
-           
-          <button type="submit" class="customer"> AGENT</button>
-           <button type="submit" class="agent"> CUSTOMER</button>
-          </div> 
-<button class="register-btn" type="submit">Register</button>
-<p class="terms">By registering, I accept all terms and conditions.</p>
-      </div>
-        </form>
-      </div>
-        </div>
-        </div>
         </teleport>
-    
+
       </div>
     </div>
   </header>
@@ -182,7 +188,7 @@ header {
   background-color: #fff;
 }
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -190,134 +196,128 @@ header {
   bottom: 0;
   width: 100%;
   display: flex;
-justify-content: center;
-align-content: center;
-  background-color:#000000da ;}
-  .modal-container{
-    background-color: white;
+  justify-content: center;
+  align-content: center;
+  background-color: #000000da;
+}
+.modal-container {
+  background-color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
-width: 500px;
-height: 550px;
-margin-top: 10%;
-top: 10%;
+  width: 500px;
+  height: 550px;
+  margin-top: 10%;
+  top: 10%;
+}
+.modal-header {
+  display: flex;
+  padding: 2rem 1rem;
+}
+.modal-header > h3 {
+  color: #6d553e;
+  text-align: center;
+  font-weight: 700;
+  font-family: inherit;
+  flex: 1;
+  font-size: 1.5rem;
+}
+.times {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
 
-  }
-  .modal-header{
-    display: flex;
-    padding: 2rem 1rem;
-    
- 
-  }
-  .modal-header > h3{
-   color: #6d553e;
-   text-align: center;
-   font-weight: 700;
-   font-family: inherit;
-   flex: 1;
-   font-size: 1.5rem;
-  }
-  .times {
-    border: 1px solid white;
-    border-radius: 50%;
-    font-size: 1rem;
-    padding: 0.3rem;
-  }
+.form-wrap {
+  padding: 1rem;
+}
+.form-wrap .input-group:last-child {
+  margin-bottom: 0;
+}
 
-  .form-wrap{
-    padding: 1rem;
-  }
-  .form-wrap .input-group:last-child{
-    margin-bottom: 0;
-  }
-  
-  .form-wrap  label{
-    margin: .25rem 0;
-    display: block;
-    color: #6d553e;
-    font-size: 1rem;
-  }
-  .form-wrap >.input-group{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .form-wrap .input-wrap-one input {
-width: 200px;  }
+.form-wrap label {
+  margin: 0.25rem 0;
+  display: block;
+  color: #6d553e;
+  font-size: 1rem;
+}
+.form-wrap > .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-wrap .input-wrap-one input {
+  width: 200px;
+}
 
-.input-group-one{
+.input-group-one {
   display: flex;
 }
-.input-group-button{
+.input-group-button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  
 }
- 
 
- .form-wrap input{
+.form-wrap input {
   width: 100%;
-  padding: .25rem;
+  padding: 0.25rem;
   outline: none;
-  border-radius: 3px ;
-  border:  1px solid #6d553e;
- }
-  .agent{
-
- padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #6d553e;
+}
+.agent {
+  padding: 5px 8px;
   color: white;
   background-color: var(--barley-40);
   border-radius: 4px;
   outline: none;
   border: 2px solid var(--barley-40);
   margin-left: 2rem;
-
 }
 
-.customer{
-   padding: 5px 8px;
+.customer {
+  padding: 5px 8px;
   color: var(--barley-40);
   font-weight: 700;
-  background-color:white;
+  background-color: white;
   border-radius: 4px;
   outline: none;
-font-weight: 500px;
-margin-right: 2rem;
+  font-weight: 500px;
+  margin-right: 2rem;
   border: 2px solid var(--barley-40);
 }
-.register-btn{
+.register-btn {
   padding: 5px 5px;
   color: var(--barley-40);
   font-weight: 700;
-  background-color:#c2aa93;
+  background-color: #c2aa93;
   border-radius: 4px;
   outline: none;
-font-weight: 500;
-  margin:2rem 0 0 0;
+  font-weight: 500;
+  margin: 2rem 0 0 0;
   width: 100%;
-  border: 2px solid #C2AA93
-
+  border: 2px solid #c2aa93;
 }
-.terms{
+.terms {
   color: #6d553e;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
-.input-wrap-two{
+.input-wrap-two {
   padding-right: 1rem;
 }
-.input-wrap-one>label{
+.input-wrap-one > label {
   font-size: 1rem;
 }
-.input-wrap-two >.country{
+.input-wrap-two > .country {
   width: 70px;
 }
-.input-wrap-two > .phone{
+.input-wrap-two > .phone {
   width: 330px;
 }
-   .logo{
+.logo {
   padding: 1rem 0;
 }
 .logo img {

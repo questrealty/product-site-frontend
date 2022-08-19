@@ -34,16 +34,21 @@
 
 <style scoped>
 .container {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   background-color: var(--barley-120);
-  width: 100%;
+  max-width: 100%;
   padding: 84px 0;
-  margin: 80px 0 120px;
 }
+
+.inner-container {
+  max-width: 1440px;
+  margin: 120px auto 0;
+=======
 .Frame-290{
   width: 700px;
   height: 520px;
+
 }
 h1 {
   color: var(--barley-40);
@@ -95,6 +100,7 @@ img {
   .inner-container {
     display: flex;
     flex-direction: row-reverse;
+    align-items: flex-start;
   }
 
   .image,
