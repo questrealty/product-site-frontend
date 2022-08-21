@@ -3,7 +3,7 @@
   <div class="container">
   
     <FilterBar />
-    <SearchHeader />
+    <!-- <SearchHeader /> -->
     <div class="content">
       <PropertyList />
       <SideBar />
@@ -24,6 +24,9 @@ import SiteFooter from "../components/SiteFooter.vue";
 </script>
 
 <style scoped>
+.container{
+  max-width: 100%;
+}
 .content {
   display: flex;
   justify-content: space-between;

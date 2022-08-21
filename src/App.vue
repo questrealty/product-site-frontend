@@ -1,10 +1,6 @@
 <template>
   <div class="overall-container">
-   
-    <!-- <div class="fullscreen"> -->
     <router-view />
-    <!-- </div> -->
- 
   </div>
 </template>
 
