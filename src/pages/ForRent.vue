@@ -1,13 +1,15 @@
 <template>
-  <Header />
-  <div class="container">
-    <FilterBar />
-    <div class="content">
-      <PropertyList />
-      <SideBar />
+  <main>
+    <!-- <Header /> -->
+    <div class="container">
+      <FilterBar />
+      <div class="content">
+        <PropertyList />
+        <SideBar />
+      </div>
     </div>
-  </div>
-  <SiteFooter />
+    <SiteFooter />
+  </main>
 </template>
 
 

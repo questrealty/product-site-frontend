@@ -62,6 +62,7 @@ h1 {
 
 .service-items:hover {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.479);
+  transition: 0.3s ease-in-out;
 }
 
 h3 {

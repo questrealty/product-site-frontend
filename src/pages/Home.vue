@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div class="home">
-    <Header/>
+    <!-- <Header/> -->
     <FirstSection />
     <SecondSection />
     <OurServices />

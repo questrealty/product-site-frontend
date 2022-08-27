@@ -1,15 +1,16 @@
 <template>
-  <Header/>
-  <div class="container">
-  
-    <FilterBar />
-    <!-- <SearchHeader /> -->
-    <div class="content">
-      <PropertyList />
-      <SideBar />
+  <main>
+    <!-- <Header /> -->
+    <div class="container">
+      <FilterBar />
+      <!-- <SearchHeader /> -->
+      <div class="content">
+        <PropertyList />
+        <SideBar />
+      </div>
     </div>
-  </div>
-  <SiteFooter/>
+    <SiteFooter />
+  </main>
 </template>
 
 
@@ -24,7 +25,7 @@ import SiteFooter from "../components/SiteFooter.vue";
 </script>
 
 <style scoped>
-.container{
+.container {
   max-width: 100%;
 }
 .content {
