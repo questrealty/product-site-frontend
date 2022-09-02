@@ -26,6 +26,11 @@ const routes = [
     component: ForSale,
   },
   {
+    path: "/property-info",
+    name: "Property Info",
+    component: () => import("../pages/PropertyInfo.vue"),
+  },
+  {
     path: "/contact-us",
     name: "Contact",
     component: () => import("../pages/Contact.vue"),
