@@ -44,7 +44,7 @@
 .inner-container {
   max-width: 1440px;
   margin: 120px auto 0;
-=======
+}
 .Frame-290{
   width: 700px;
   height: 520px;

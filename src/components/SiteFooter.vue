@@ -255,6 +255,8 @@
         <p>All rights reserved @Quest Realty 2022</p>
       </div>
     </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -271,7 +273,7 @@ import Linkedin from "./icons/Linkedin.vue";
 import Facebook from "./icons/Facebook.vue";
 import Logo from "./icons/Logo.vue";
 </script>
-=======
+<style>
 .footer-nav {
   padding-top: 120px;
 }
@@ -410,5 +412,5 @@ button:hover {
     width: 30%;
   }
 
-
-<style></style>
+}
+</style>
