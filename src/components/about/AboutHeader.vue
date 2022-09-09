@@ -13,7 +13,8 @@
 .container {
   margin-top: 90px;
   position: relative;
-  height: 500px;
+  height: 100vh;
+  max-width: 100%;
 }
 
 .img-fluid {
@@ -40,4 +41,8 @@ h1 {
     width: 833px;
   }
 }
+</style>
+
+<style>
+
 </style>

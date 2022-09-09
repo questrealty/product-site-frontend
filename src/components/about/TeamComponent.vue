@@ -56,6 +56,7 @@
   text-align: center;
   font-size: 0.8rem;
   margin-bottom:60px;
+  max-width: max-content;
 }
 
 .text{

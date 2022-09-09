@@ -2,6 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --oslo-gray: #1a1b1e;
+  --barley-10: #c2aa93;
+  --barley-120: #ede5df;
+  --barley-40: #6d553e;
+  --oslo-gray-120: #1a1b1d;
+  --white: #e5e5e5;
+}
+
 .sec-btn {
   @apply bg-[#828692];
 }
