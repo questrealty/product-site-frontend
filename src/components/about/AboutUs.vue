@@ -32,6 +32,7 @@
   font-size: 16px;
   text-align: center;
   font-weight: 600;
+  max-width: 100%;
 }
 
 h2 {

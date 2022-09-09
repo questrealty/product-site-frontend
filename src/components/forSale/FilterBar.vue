@@ -1,115 +1,121 @@
 <template>
-  <div
-    class="wrapper">
-    <div
-      class="search-filter">
-      <button
-        class="filter">
-        <p>Type</p>
-        <img
-          src="../../assets/forSale/D-Arrow-Icon.png"
-          alt=""
-          class="arrow-icon" />
-      </button>
-      <button
-        class="filter">
-        <p>Bed</p>
-        <img
-          src="../../assets/forSale/D-Arrow-Icon.png"
-          alt=""
-          class="arrow-icon" />
-      </button>
-      <button
-        class="filter price">
-        <p>Price
-          List</p>
-        <img
-          src="../../assets/forSale/D-Arrow-Icon.png"
-          alt=""
-          class="arrow-icon" />
-      </button>
-      <button
-        class="filter">Search</button>
+  <div class="mt-[90px]">
+    <div class="pry-main">
+      <div class="
+          px-[15px]
+          mx-auto
+          max-w-[1440px]
+          py-[15px]
+          flex
+          sm:justify-between
+          justify-center
+          gap-[15px]
+          sm:gap-0
+          h5-med
+          !text[24px]
+          !text-[#6D553E]
+        ">
+        <div class="sm:block hidden">
+          <div class="lg:gap-[32px] gap-[15px] flex items-center">
+            <select class="
+                py-[10px]
+                md:px-[16px]
+                px-[5px]
+                rounded-[5px]
+                bg-[#f6f6f6]
+                outline-none
+                border-none
+              " name="type" id="type">
+              <option value="">Type</option>
+              <option value="">Type</option>
+              <option value="">Type</option>
+              <option value="">Type</option>
+              <option value="">Type</option>
+            </select>
+            <select class="
+                py-[10px]
+                md:px-[16px]
+                px-[5px]
+                rounded-[5px]
+                bg-[#f6f6f6]
+                outline-none
+                border-none
+              " name="Bed" id="bed">
+              <option value="">Bed</option>
+              <option value="">Bed</option>
+              <option value="">Bed</option>
+              <option value="">Bed</option>
+              <option value="">Bed</option>
+            </select>
+            <select class="
+                py-[10px]
+                md:px-[16px]
+                px-[5px]
+                rounded-[5px]
+                bg-[#f6f6f6]
+                outline-none
+                border-none
+              " name="price_list" id="price_list">
+              <option value="">Price List</option>
+              <option value="">Price List</option>
+              <option value="">Price List</option>
+              <option value="">Price List</option>
+              <option value="">Price List</option>
+            </select>
+            <button class="
+                py-[10px]
+                md:px-[16px]
+                px-[5px]
+                rounded-[5px]
+                bg-[#f6f6f6]
+                outline-none
+                border-none
+              ">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:gap-[32px] gap-[15px] flex items-center">
+          <button class="
+              py-[10px]
+              md:px-[16px]
+              px-[5px]
+              rounded-[5px]
+              bg-[#f6f6f6]
+              outline-none
+              border-none
+            ">
+            Dashboard
+          </button>
+          <button class="
+              py-[10px]
+              md:px-[16px]
+              px-[5px]
+              rounded-[5px]
+              bg-[#f6f6f6]
+              outline-none
+              border-none
+            ">
+            Refresh
+          </button>
+        </div>
+      </div>
     </div>
-    <div
-      class="dashboard-refresh">
-      <router-link class="link" to="/customer-dashboard">
-        <button
-          class="filter">Dashboard</button>
-      </router-link>
-      <button
-        class="filter">Refresh</button>
+    <div v-if="props.showBar"
+      class="!text-[#6D553E] pt-[28px] sm:px-[40px] px-[15px] flex md:flex-row flex-col md:gap-[60px] gap-[5px] items-center lg:justify-between justify-center">
+      <p class="h3-semi">LIST OF PROPERTIES AVAILABLE FOR SALE</p>
+      <SearchBar />
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+import SearchBar from '../SearchBar.vue';
+
+const props = defineProps({
+  showText: {
+    type: Boolean
+  }
+})
 </script>
-
-<style scoped>
-
-.wrapper {
-  display: flex;
-  justify-content: space-around;
-  background-color: #6d553e;
-  margin-top:95px;
-}
-.search-filter {
-  display: flex;
-}
-.link {
-  text-decoration: none;
-}
-.filter {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: var(--barley-40);
-  padding: 5px 7px;
-  border-radius: 3px;
-  border: none;
-}
-.filter p {
-  padding: 0 4px;
-}
-.arrow-icon {
-  width: 10px;
-  height: 5px;
-}
-
-@media (min-width: 280px) {
-  .wrapper {
-    padding: 10px;
-  }
-  .filter {
-    font-size: 0.6rem;
-    margin: 2px;
-  }
-  .dashboard-refresh {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .dashboard-refresh {
-    display: flex;
-  }
-  .filter {
-    font-size: 0.6rem;
-    margin: 0 12px;
-  }
-}
-@media (min-width: 786px) {
-  .wrapper {
-    flex-direction: row;
-    padding: 20px 100px;
-  }
-  .filter {
-    font-size: 1rem;
-    margin: 0 13px;
-  }
-  .dashboard-refresh {
-    margin-right: -100px;
-  }
-}
-</style>

@@ -9,7 +9,7 @@ const state = reactive({
 });
 </script>
 <template>
-  <header>
+  <header class="header">
     <div class="mobile-view">
       <div class="logo">
         <img src="../assets/logo.png" alt="quest-realty-logo" />

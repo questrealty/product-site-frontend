@@ -17,6 +17,7 @@
     padding: 0 40px;
     justify-content: center;
     height: 400px;
+    max-width: 100%;
 }
 
 p{
