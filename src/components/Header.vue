@@ -56,54 +56,32 @@ const state = reactive({
 
         <teleport :disabled="true" to="#modals">
           <div class="modal" v-if="isShow">
-            <div class="modal-container">
+            <div class="modal-container-login">
               <div>
                 <div class="modal-header">
-                  <h3>Create Account</h3>
+                  <h3>Sign in</h3>
                   <button @click="isShow = false" class="times">x</button>
                 </div>
                 <form action="">
                   <div class="form-wrap">
-                    <div class="input-group">
-                      <div class="input-wrap-one">
-                        <label for="fname">First Name </label>
-                        <input type="text" />
-                      </div>
-                      <div class="input-wrap-one">
-                        <label for="lname">Last Name </label>
-                        <input type="text" />
-                      </div>
-                    </div>
-
+                
                     <div class="input-wrap">
-                      <label for="email">Enter email address </label>
+                           <label for="email">Enter email address </label>
                       <input type="email" />
                     </div>
                     <div class="input-wrap">
                       <label>Enter password </label>
                       <input type="password" />
                     </div>
-                    <div class="input-wrap">
-                      <label>Confirm password </label>
-                      <input type="password" />
-                    </div>
-                    <div class="input-group-one">
-                      <div class="input-wrap-two">
-                        <label for="country">Country code </label>
-                        <input type="number" class="country" />
-                      </div>
-                      <div class="input-wrap-two">
-                        <label for="phone"> Format(Digit only) </label>
-                        <input type="number" class="phone" />
-                      </div>
-                    </div>
-                    <div class="input-group-button">
-                      <button type="submit" class="customer">AGENT</button>
-                      <button type="submit" class="agent">CUSTOMER</button>
-                    </div>
-                    <button class="register-btn" type="submit">Register</button>
-                    <p class="terms">
-                      By registering, I accept all terms and conditions.
+  
+                    <p class="forgot">
+                      Forgot password. <router-link to="/forgot-password">Click here</router-link>
+
+                    </p>
+                    <button class="register-btn" type="submit">LOGIN</button>
+                    <p class="not-register">
+                      Not register yet? <router-link to="/register">Create account</router-link>
+
                     </p>
                   </div>
                 </form>
@@ -111,21 +89,21 @@ const state = reactive({
             </div>
           </div>
           <div class="modal" v-else-if="isOpen">
-            <div class="modal-container">
+            <div class="modal-container-register">
               <div>
                 <div class="modal-header">
-                  <h3>Create Accounts</h3>
+                  <h3>Create Account</h3>
                   <button @click="isOpen = false" class="times">x</button>
                 </div>
                 <form action="">
                   <div class="form-wrap">
                     <div class="input-group">
                       <div class="input-wrap-one">
-                        <label for="fname">First Name </label>
+                        <label class="label" for="fname">First Name </label>
                         <input type="text" />
                       </div>
                       <div class="input-wrap-one">
-                        <label for="lname">Last Name </label>
+                        <label class="label" for="lname">Last Name </label>
                         <input type="text" />
                       </div>
                     </div>
@@ -161,9 +139,39 @@ const state = reactive({
                       By registering, I accept all terms and conditions.
                     </p>
                   </div>
+
+                  
+
                 </form>
               </div>
             </div>
+          </div>
+          <div class="modal">
+<div class="modal-container-login">
+      <div>
+        <div class="modal-header">
+          <h3>Forgot password</h3>
+          <button @click="isOpen = false" class="times">x</button>
+        </div>
+        <form action="">
+          <div class="form-wrap">
+        
+            <div class="input-wrap">
+                   <label for="email">Enter email address </label>
+              <input type="email" />
+            </div>
+            <div class="input-wrap">
+              <label>Enter password </label>
+              <input type="password" />
+            </div>
+
+            
+            <button class="register-btn" type="submit">SEND ME A LINK</button>
+           
+          </div>
+        </form>
+      </div>
+    </div>
           </div>
         </teleport>
 
@@ -174,7 +182,6 @@ const state = reactive({
 
 <style scoped>
 header {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -197,16 +204,21 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   background-color: #000000da;
 }
-.modal-container {
+
+.modal-container-register {
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
-  width: 500px;
-  height: 550px;
-  margin-top: 10%;
-  top: 10%;
+  width: 550px;
+  height: 650px;
+}
+.modal-container-login {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
+  width: 550px;
+  height: 425px;
 }
 .modal-header {
   display: flex;
@@ -224,7 +236,7 @@ header {
   border: 1px solid white;
   border-radius: 50%;
   font-size: 1rem;
-  padding: 0.3rem;
+  padding: .25rem .5rem;
 }
 
 .form-wrap {
@@ -234,11 +246,12 @@ header {
   margin-bottom: 0;
 }
 
-.form-wrap label {
-  margin: 0.25rem 0;
+label {
+  margin:  0;
   display: block;
   color: #6d553e;
-  font-size: 1rem;
+  font-size: .8rem;
+  font-weight: 700;
 }
 .form-wrap > .input-group {
   display: flex;
@@ -248,7 +261,12 @@ header {
 .form-wrap .input-wrap-one input {
   width: 200px;
 }
-
+.input-wrap-one, .input-wrap{
+  margin-bottom: 1rem;
+}
+.input-wrap-one .label{
+  font-size: .8rem;
+}
 .input-group-one {
   display: flex;
 }
@@ -258,6 +276,7 @@ header {
   align-items: center;
   margin-top: 1rem;
 }
+
 
 .form-wrap input {
   width: 100%;
@@ -295,7 +314,7 @@ header {
   border-radius: 4px;
   outline: none;
   font-weight: 500;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
   width: 100%;
   border: 2px solid #c2aa93;
 }
@@ -304,6 +323,7 @@ header {
   text-align: center;
   font-size: 0.8rem;
   font-weight: 700;
+  margin-top: .5rem;
 }
 .input-wrap-two {
   padding-right: 1rem;
@@ -353,6 +373,27 @@ header {
   animation-duration: 0.5s;
   background-color: #fff;
 }
+.not-register{
+
+  color: #6d553e;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.not-register>a{
+  text-decoration: underline;
+
+}
+.forgot{
+
+  color: #6d553e;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 
 @keyframes menu {
   from {

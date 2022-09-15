@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <img
-      src="../../assets/about-assets/Frame-353.svg"
+    <img src="../../assets/about-assets/Frame-353.svg"
       alt=""
       class="img-fluid"
     />

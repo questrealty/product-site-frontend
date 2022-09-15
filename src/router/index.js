@@ -1,8 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../pages/Home.vue";
-import About from "../pages/About.vue";
-import ForRent from "../pages/ForRent.vue";
-import ForSale from "../pages/ForSale.vue";
 
 const routes = [
   {
@@ -13,17 +9,17 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: () => import("../pages/About.vue"),
   },
   {
     path: "/for-rent",
     name: "ForRent",
-    component: ForRent,
+    component: () => import("../pages/ForRent.vue"),
   },
   {
     path: "/for-sale",
     name: "ForSale",
-    component: ForSale,
+    component: () => import("../pages/ForSale.vue"),
   },
   {
     path: "/property-info",
@@ -54,6 +50,11 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "NotFound",
     component: () => import("../pages/Error404.vue"),
+  },
+  {
+    path: "/forgot-passwrod",
+    name: "ForgotPassword",
+    component: () => import("../pages/ForgotPassword.vue"),
   },
 ];
 const router = createRouter({
