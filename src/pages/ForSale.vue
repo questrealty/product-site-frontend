@@ -1,6 +1,6 @@
 <template>
   <main>
-    <!-- <Header /> -->
+    <Header />
     <div class="container">
       <FilterBar />
       <!-- <SearchHeader /> -->

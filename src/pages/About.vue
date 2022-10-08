@@ -20,7 +20,7 @@ export default {
 </script>
 <template>
   <div id="about">
-    <!-- <Header /> -->
+     <Header />
     <AboutHeader />
     <AboutUs />
     <TeamComponent />

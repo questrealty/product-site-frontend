@@ -31,6 +31,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
+  max-width: 300px;
   flex-direction: column;
 }
 </style>

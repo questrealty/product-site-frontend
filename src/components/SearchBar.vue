@@ -1,5 +1,5 @@
 <template>
-    <div class="
+    <div :class="color" class="
           text-[#6D553E]
           max-w-[823px]
           w-full
@@ -10,10 +10,16 @@
           flex items-center
           justify-between
         ">
-        <p class="h4-bold sm:block hidden">Search Ressults</p>
+        <p v-if="props.showText" class="h4-bold sm:block hidden">Search Results</p>
         <div class="w-full sm:max-w-[434px]">
             <input class=" w-full rounded-[20px] py-[10px] px-[16px] outline-none" type="text" name="search" id="search"
                 placeholder="Search Result" />
         </div>
     </div>
 </template>
+<script setup>
+const props = defineProps({
+    showText: Boolean,
+    color: String
+})
+</script>
