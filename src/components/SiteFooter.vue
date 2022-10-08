@@ -60,6 +60,22 @@
             <a href="#" class="mb-[12px]">Help Videos</a>
             <a href="#" class="my-[12px]">Features</a>
             <a href="#" class="my-[12px]">Support</a>
+
+        <div class="btn">
+          <button>Post your properties</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links-container">
+      <div class="footer-link">
+        <div class="section1">
+          <p class="partnership">Patnerships</p>
+          <div class="">
+            <img src="../assets/theta.png" alt="" />
+            <img src="../assets/iost.png" alt="" /><br>
+            <img src="../assets/vibe.png" alt="" />
+            <img src="../assets/dropbox.png" alt="" />
+
           </div>
         </div>
         <!-- Services column -->
@@ -221,10 +237,29 @@
         >
           All rights reserved @Quest Realty 2022
         </p>
+<p>Connect With us</p>
+        <div class="social-media">
+          <img src="../assets/twitter-icon.png" alt="twitter" title="Twitter" />
+          <img
+            class="media"
+            src="../assets/instagram-icon.png"
+            alt="instagram"
+            title="Instagram"
+          />
+          <img class="media" src="../assets/linkedin-icon.png" alt="linkedin" title="" />
+          <img class="media" src="../assets/facebook-icon.png" alt="facebook" title="" />
+        </div>
+
+      </div>
+      <div class="reserved">
+        <p>All rights reserved @Quest Realty 2022</p>
+      </div>
+    </div>
       </div>
     </div>
   </footer>
 </template>
+
 
 
 <script setup>
@@ -238,5 +273,144 @@ import Linkedin from "./icons/Linkedin.vue";
 import Facebook from "./icons/Facebook.vue";
 import Logo from "./icons/Logo.vue";
 </script>
+<style>
+.footer-nav {
+  padding-top: 120px;
+}
 
-<style></style>
+.display-border {
+  border-top: 1px solid var(--barley-40);
+  padding: 0 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.group1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.footer-nav-links {
+  display: none;
+  font-size: 18px;
+  width: 70%;
+  margin-left: 24px;
+}
+.partnership{
+  margin-bottom: 20px;
+}
+.footer-nav-links > a {
+  margin-right: 44px;
+  flex: 1 1 30%;
+  color: var(--barley-40);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+button {
+  background-color: #6d553e;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.media{
+  padding-left: 20px;
+}
+.social-media{
+  margin-top: 20px;
+}
+button:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-links-container {
+  padding: 54px 0px 54px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--barley-40);
+  width: 100%;
+}
+
+.footer-links-container,
+.footer-links-container a {
+  color: white;
+}
+
+.footer-link {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  width: 50%;
+}
+
+.section1 > a,
+.section2 > a,
+.section3 > a,
+.section4 > a {
+  margin-bottom: 12px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.reserved{
+  margin-top: 20px;
+}
+.subscribe {
+  width: 60%;
+}
+
+/* .data-collection {
+} */
+
+@media (min-width: 940px) {
+  .group1 {
+    width: 70%;
+  }
+
+  .footer-nav-links {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .footer-nav-links > a {
+    margin-right: 4px;
+  }
+
+  button {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+
+  .footer-links-container {
+    flex-direction: row;
+  }
+
+  .footer-link {
+    width: 30%;
+  }
+
+}
+</style>
