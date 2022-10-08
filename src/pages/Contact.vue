@@ -1,6 +1,6 @@
 <template>
   <main>
-    <!-- <Header /> -->
+    <Header />
 
     <ContactUs class="mt-[180px]" />
     <SiteFooter />

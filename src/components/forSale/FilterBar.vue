@@ -77,7 +77,7 @@
         </div>
 
         <div class="lg:gap-[32px] gap-[15px] flex items-center">
-          <button class="
+          <router-link to="/dashboard" class="
               py-[10px]
               md:px-[16px]
               px-[5px]
@@ -87,7 +87,7 @@
               border-none
             ">
             Dashboard
-          </button>
+          </router-link>
           <button class="
               py-[10px]
               md:px-[16px]

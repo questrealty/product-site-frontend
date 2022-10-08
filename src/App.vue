@@ -1,5 +1,4 @@
 <template>
-  <Header />
 
   <router-view v-slot="{ Component }">
     <transition name="fade" mode="out-in">
@@ -9,7 +8,6 @@
 </template>
 
 <script setup>
-import Header from "./components/Header.vue";
 </script>
 
 <style>
@@ -21,16 +19,4 @@ import Header from "./components/Header.vue";
   position: relative;
 }
 
-.fade-enter-from {
-  transform: translateX(-100%);
-}
-.fade-leave-to {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: 0.4s ease-in-out;
-}
 </style>

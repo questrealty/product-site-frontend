@@ -14,13 +14,6 @@
 <script>
 export default {
   props: ['iconText', 'iconSource'],
-  // data() {
-  //     return {
-  // },
-  // methods: {
-  //     debug() {
-  //         console.log(this.property[0])
-  //     }
 };
 </script>
 

@@ -32,6 +32,43 @@ const routes = [
     component: () => import("../pages/Contact.vue"),
   },
   {
+    path: "/dashboard",
+    name: "DashBoard",
+    component: () => import("../components/dashboard/Dashboard.vue"),
+    children: [
+      {
+        path: "",
+        name: "DashBoard Content",
+        component: () => import("../pages/DashBoardContent.vue"),
+      },
+      {
+        path: "post-property",
+        name: "Post Property",
+        component: () => import("../pages/PostProperty.vue"),
+      },
+      {
+        path: "property-types",
+        name: "Property Types",
+        component: () => import("../pages/PropertyTypes.vue"),
+      },
+      {
+        path: "inbox",
+        name: "Inbox",
+        component: () => import("../pages/Inbox.vue"),
+      },
+      {
+        path: "profile",
+        name: "Profile",
+        component: () => import("../pages/Profile.vue"),
+      },
+      {
+        path: "settings",
+        name: "Settings",
+        component: () => import("../pages/Settings.vue"),
+      },
+    ],
+  },
+  {
     path: "/unauthorised",
     name: "Unauthorised",
     component: () => import("../pages/Error401.vue"),
@@ -50,12 +87,8 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "NotFound",
     component: () => import("../pages/Error404.vue"),
-  },
-  {
-    path: "/forgot-passwrod",
-    name: "ForgotPassword",
-    component: () => import("../pages/ForgotPassword.vue"),
-  },
+  }
+ 
 ];
 const router = createRouter({
   history: createWebHistory(),
